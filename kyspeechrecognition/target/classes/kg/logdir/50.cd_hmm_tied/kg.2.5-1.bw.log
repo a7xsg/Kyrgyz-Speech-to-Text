@@ -1,0 +1,2037 @@
+        INFO: main.c(229): Compiled on May  6 2020 at 21:08:24
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-2passvar	no		yes
+-abeam		1e-100		1.000000e-90
+-accumdir			/home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-bbeam		1e-100		1.000000e-10
+-cb2mllrfn	.1cls.		.1cls.
+-cepdir				/home/abdy/Desktop/diploma/kg/feat
+-cepext		mfc		mfc
+-ceplen		13		13
+-ckptintv			0
+-cmn		live		batch
+-cmninit	40,3,-1		40,3,-1
+-ctlfn				/home/abdy/Desktop/diploma/kg/etc/kg_train.fileids
+-diagfull	no		no
+-dictfn				/home/abdy/Desktop/diploma/kg/etc/kg.dic
+-example	no		no
+-fdictfn			/home/abdy/Desktop/diploma/kg/etc/kg.filler
+-feat		1s_c_d_dd	1s_c_d_dd
+-fullvar	no		no
+-help		no		no
+-hmmdir				
+-latdir				
+-latext				
+-lda				
+-ldadim		0		0
+-lsnfn				/home/abdy/Desktop/diploma/kg/etc/kg_train.transcription
+-lw		11.5		1.150000e+01
+-maxuttlen	0		0
+-meanfn				/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/means
+-meanreest	yes		yes
+-mixwfn				/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/mixture_weights
+-mixwreest	yes		yes
+-mllrmat			
+-mmie		no		no
+-mmie_type	rand		rand
+-moddeffn			/home/abdy/Desktop/diploma/kg/model_architecture/kg.500.mdef
+-mwfloor	0.00001		1.000000e-05
+-npart				4
+-nskip				0
+-outphsegdir			
+-outputfullpath	no		no
+-part				1
+-pdumpdir			
+-phsegdir			
+-phsegext	phseg		phseg
+-runlen		-1		-1
+-sentdir			
+-sentext	sent		sent
+-spthresh	0.0		0.000000e+00
+-svspec				
+-timing		yes		no
+-tmatfn				/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/transition_matrices
+-tmatreest	yes		yes
+-topn		4		2
+-tpfloor	0.0001		1.000000e-05
+-ts2cbfn			.cont.
+-varfloor	0.00001		1.000000e-04
+-varfn				/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/variances
+-varnorm	no		no
+-varreest	yes		yes
+-viterbi	no		no
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: main.c(318): Reading /home/abdy/Desktop/diploma/kg/model_architecture/kg.500.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 57631 total models defined (47 base, 57584 tri)
+INFO: model_def_io.c(575): 230524 total states
+INFO: model_def_io.c(576): 641 total tied states
+INFO: model_def_io.c(577): 141 total tied CI states
+INFO: model_def_io.c(578): 47 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/mixture_weights [641x1x2 array]
+INFO: s3tmat_io.c(118): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/transition_matrices [47x3x4 array]
+INFO: mod_inv.c(301): inserting tprob floor 1.000000e-05 and renormalizing
+INFO: s3gau_io.c(169): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/means [641x1x2 array]
+INFO: s3gau_io.c(169): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/variances [641x1x2 array]
+INFO: gauden.c(176): 641 total mgau
+INFO: gauden.c(150): 1 feature streams (|0|=39 )
+INFO: gauden.c(187): 2 total densities
+INFO: gauden.c(90): min_var=1.000000e-04
+INFO: gauden.c(165): compute 2 densities/frame
+INFO: main.c(431): Will reestimate mixing weights.
+INFO: main.c(433): Will reestimate means.
+INFO: main.c(435): Will reestimate variances.
+INFO: main.c(443): Will reestimate transition matrices
+INFO: main.c(456): Reading main dictionary: /home/abdy/Desktop/diploma/kg/etc/kg.dic
+INFO: lexicon.c(221): 10551 entries added from /home/abdy/Desktop/diploma/kg/etc/kg.dic
+INFO: main.c(466): Reading filler dictionary: /home/abdy/Desktop/diploma/kg/etc/kg.filler
+INFO: lexicon.c(221): 3 entries added from /home/abdy/Desktop/diploma/kg/etc/kg.filler
+INFO: corpus.c(1065): Will process 496 utts starting at 0
+INFO: main.c(665): Reestimation: Baum-Welch
+INFO: cmn.c(133): CMN: 46.74  8.59 11.66 17.92 -9.38 -8.00 -8.41 -6.37  0.21 -9.14 -1.34 12.91  2.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399497 ignored
+column defns
+	<seq>
+	<id>
+	<n_frame_in>
+	<n_frame_del>
+	<n_state_shmm>
+	<avg_states_alpha>
+	<avg_states_beta>
+	<avg_states_reest>
+	<avg_posterior_prune>
+	<frame_log_lik>
+	<utt_log_lik>
+	... timing info ... 
+utt>     0  common_voice_ky_18399497  225    0    96 16 
+INFO: cmn.c(133): CMN: 54.22  8.07 10.97  9.37 -3.55 -13.61  2.86  4.37 -9.21 -6.99 -2.90  7.10 -2.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399499 ignored
+utt>     1  common_voice_ky_18399499  294    0    92 10 
+INFO: cmn.c(133): CMN: 49.29 16.32  0.27 -3.48 -11.96  4.82 -16.74 -2.78  0.95  0.86 -3.86 -0.40 10.17 
+utt>     2  common_voice_ky_18399542  383    0   112 14  1 2 2.692669e-12 -1.485264e+02 -5.688560e+04
+INFO: cmn.c(133): CMN: 46.47  8.37 15.82 -1.19 -14.99 20.95 -23.55  0.43 -3.04 -8.52 -9.19  9.69 -0.02 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399543 ignored
+utt>     3  common_voice_ky_18399543  331    0   112 5 
+INFO: cmn.c(133): CMN: 47.70 16.85 10.55  0.36 -20.48  4.83  3.12 -6.60 -10.59 -12.88  6.71 -0.92  4.70 
+utt>     4  common_voice_ky_18399551  279    0   104 9  1 3 1.774244e-12 -1.459706e+02 -4.072578e+04
+INFO: cmn.c(133): CMN: 53.89  9.52 13.35 -6.01 -9.37 15.89  2.80 -3.36 -11.57 -6.65  6.75 11.48 -3.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399550 ignored
+utt>     5  common_voice_ky_18399550  246    0    96 13 
+INFO: cmn.c(133): CMN: 50.20 20.71  5.27 -11.48 -12.50 11.79 -3.50 -7.67 -6.47  0.77  3.41 -3.36 -1.13 
+utt>     6  common_voice_ky_18399552  359    0   100 8  1 2 1.490327e-12 -1.333829e+02 -4.788445e+04
+INFO: cmn.c(133): CMN: 51.93 20.61  2.88 -7.84 -10.54 25.35 -20.31 -6.72 -6.10 -7.29 -0.02 -3.80  3.25 
+utt>     7  common_voice_ky_18399544  363    0   116 10  1 2 3.390616e-12 -1.411348e+02 -5.123193e+04
+INFO: cmn.c(133): CMN: 55.62 18.14  7.50 -0.66 -14.18 24.33 -10.22 -18.05 -13.53 -2.27  6.07 -0.29 10.47 
+utt>     8  common_voice_ky_18399553  242    0   112 11  1 3 7.185805e-13 -1.289823e+02 -3.121373e+04
+INFO: cmn.c(133): CMN: 51.71 10.31  5.27  4.14 -10.37 10.54 -0.86 -8.47 -16.38 -1.34  7.53  3.09  1.45 
+utt>     9  common_voice_ky_18399554  302    0   112 10  1 3 2.852217e-12 -1.360832e+02 -4.109712e+04
+INFO: cmn.c(133): CMN: 50.12 28.66 -0.20 -14.60 -9.68 17.12  6.32 -13.50 -12.44 -1.01  7.09  0.13 -2.02 
+utt>    10  common_voice_ky_18399562  274    0    96 10  1 2 2.729128e-12 -1.329637e+02 -3.643206e+04
+INFO: cmn.c(133): CMN: 51.61  6.45  4.24 10.81 -8.32 -1.85 -4.13 -9.04 -11.06 -10.53 -10.27  7.48  0.43 
+utt>    11  common_voice_ky_18399560  425    0    96 10  1 2 1.204391e-12 -1.306703e+02 -5.553487e+04
+INFO: cmn.c(133): CMN: 54.60 21.83  5.04 -1.93 -22.95 25.27 -0.58 -11.43 -3.59 -0.13  9.72 10.85  4.08 
+utt>    12  common_voice_ky_18399563  214    0   108 11  2 3 4.637773e-12 -1.329616e+02 -2.845378e+04
+INFO: cmn.c(133): CMN: 52.34 23.53  9.03 -5.67 -24.41 20.00  9.04 -8.65 -11.95  1.29  2.90  5.28  2.10 
+utt>    13  common_voice_ky_18399564  318    0   116 15  2 3 3.144952e-12 -1.384166e+02 -4.401646e+04
+INFO: cmn.c(133): CMN: 53.25 17.38 -1.62 -16.01 -22.90 23.32 -7.36 -8.62 -16.30  7.72 -1.95  1.40  3.80 
+utt>    14  common_voice_ky_18399572  219    0   104 12  2 4 3.256124e-12 -1.471998e+02 -3.223676e+04
+INFO: cmn.c(133): CMN: 54.00 18.33 11.65  3.43 -14.95 10.91  0.53 -5.08 -22.26 -5.04  4.53  8.00  2.34 
+utt>    15  common_voice_ky_18399574  256    0   104 11  1 3 2.745439e-12 -1.344480e+02 -3.441868e+04
+INFO: cmn.c(133): CMN: 48.32 15.02 15.83  0.44 -10.78  7.47  3.68  1.31 -19.74  0.88 -0.83  5.49  1.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399576 ignored
+utt>    16  common_voice_ky_18399576  226    0    96 16 
+INFO: cmn.c(133): CMN: 53.80 13.08 14.48 12.44 -13.06  6.01  0.44 -1.46 -19.11  3.06 -1.46  9.93  2.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399575 ignored
+utt>    17  common_voice_ky_18399575  235    0   108 13 
+INFO: cmn.c(133): CMN: 48.47 16.67 11.52 -3.17 -12.22  8.87  2.25  1.38 -6.42  0.77 -6.89  4.55  3.26 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399577 ignored
+utt>    18  common_voice_ky_18399577  276    0   116 14 
+INFO: cmn.c(133): CMN: 53.86 22.04  1.10 -12.96 -24.67 13.96  8.86 -10.68 -17.78 -4.15 -3.09  8.93  5.56 
+utt>    19  common_voice_ky_18399578  256    0    88 11  1 3 2.267120e-12 -1.335807e+02 -3.419666e+04
+INFO: cmn.c(133): CMN: 53.65 15.96  4.42 -4.34 -2.54  2.90 -4.95  5.55 -15.38 -4.86 -1.85  6.09  2.32 
+WARN: "gauden.c", line 1349: Scaling factor too small: -28321245.438904
+ERROR: "backward.c", line 1011: alpha(4.265865e-02) <> sum of alphas * betas (0.000000e+00) in frame 0
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399586 ignored
+utt>    20  common_voice_ky_18399586  320    0   108 10 
+INFO: cmn.c(133): CMN: 50.71 22.98  2.23 -6.37 -1.79 -0.85 -1.15  6.19 -18.47 -4.24  1.12  1.89  4.84 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399585 ignored
+utt>    21  common_voice_ky_18399585  268    0   104 12 
+INFO: cmn.c(133): CMN: 57.56 19.45  4.89  2.08 -7.20  9.28 -12.37 11.21 -23.20 -10.01  2.61  0.08  6.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399587 ignored
+utt>    22  common_voice_ky_18399587  176    0    72 11 
+INFO: cmn.c(133): CMN: 56.62 14.77  5.16  1.28 -7.36  9.05  0.58  0.23 -9.74 -1.22 -2.53  8.73  6.24 
+utt>    23  common_voice_ky_18399588  236    0   104 12  1 3 1.827750e-12 -1.303033e+02 -3.075158e+04
+INFO: cmn.c(133): CMN: 53.72 14.49  6.26  8.64 -8.01  5.28 -12.48  6.76 -11.02 -0.40 -8.47  7.46 10.32 
+utt>    24  common_voice_ky_18399590  253    0   108 13  2 3 3.207928e-12 -1.287070e+02 -3.256286e+04
+INFO: cmn.c(133): CMN: 57.09 17.92  6.20  4.72 -10.14  7.94 -7.94 11.68 -16.29 -0.87  2.37  8.24 14.00 
+utt>    25  common_voice_ky_18399592  260    0   120 10  1 3 2.957175e-12 -1.200385e+02 -3.121001e+04
+INFO: cmn.c(133): CMN: 57.54 22.16  8.68 -3.81 -8.15  2.95 -8.32  5.33 -12.42 -0.53 -0.06  7.80 13.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18399594 ignored
+utt>    26  common_voice_ky_18399594  272    0    96 13 
+INFO: cmn.c(133): CMN: 52.20  4.33 -0.98 -11.26  2.75  2.19 -7.32 -7.41  3.39  6.26 -3.57  2.46 -1.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446104 ignored
+utt>    27  common_voice_ky_18446104  343    0    92 22 
+INFO: cmn.c(133): CMN: 55.54  0.02  3.17  6.58  4.54 -10.03 -6.34 -6.34 -2.30 -0.09 -6.08 -3.54 -3.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446105 ignored
+utt>    28  common_voice_ky_18446105  423    0   160 15 
+INFO: cmn.c(133): CMN: 58.92  0.17  3.01  3.85  2.98 -10.71 -6.81 -4.44 -2.43  5.00 -6.58 -6.49  1.74 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446108 ignored
+utt>    29  common_voice_ky_18446108  486    0   212 22 
+INFO: cmn.c(133): CMN: 55.24  2.98 -1.77 -4.56 -7.05 -6.42 -4.63 -5.44 -0.52  3.99 -1.42 -2.14  2.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446106 ignored
+utt>    30  common_voice_ky_18446106  616    0   200 4 
+INFO: cmn.c(133): CMN: 58.91  6.65  0.94 -0.99  2.34 -12.17 -6.52 -4.31  2.86  2.34 -5.13 -0.80 -4.50 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446109 ignored
+utt>    31  common_voice_ky_18446109  414    0   160 22 
+INFO: cmn.c(133): CMN: 63.30  8.90  2.15  0.67 -0.96 -10.49 -5.70 -1.27  5.51  8.61 -3.04 -2.32  1.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446110 ignored
+utt>    32  common_voice_ky_18446110  444    0   152 10 
+INFO: cmn.c(133): CMN: 49.68  2.35  0.64  4.76 -5.51 -7.87 -0.89 -8.24 -0.59  5.43 -0.06  3.73  1.64 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446111 ignored
+utt>    33  common_voice_ky_18446111  393    0   124 19 
+INFO: cmn.c(133): CMN: 57.07  8.69  8.80  1.35 -3.14 -10.26 -1.47 -11.35 -5.41 -2.36 -12.81 -5.71 -8.39 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446115 ignored
+utt>    34  common_voice_ky_18446115  387    0   148 22 
+INFO: cmn.c(133): CMN: 59.08 -0.47  4.73  4.77 -0.14 -8.70 -5.17 -8.31 -5.82 -1.34 -7.73 -4.89 -5.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446113 ignored
+utt>    35  common_voice_ky_18446113  533    0   216 3 
+INFO: cmn.c(133): CMN: 57.06  6.74 -0.89 -3.01  0.37 -13.52  1.17 -11.24  3.77  3.18 -8.26 -3.92 -4.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446117 ignored
+utt>    36  common_voice_ky_18446117  407    0   196 23 
+INFO: cmn.c(133): CMN: 60.65  0.96  2.70  2.42 -2.73 -22.71  5.31 -6.89  0.85 -3.86 -9.23 -4.14 -10.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446116 ignored
+utt>    37  common_voice_ky_18446116  498    0   188 31 
+INFO: cmn.c(133): CMN: 58.93 -4.85 -3.61 -5.26  3.83 -7.75 -11.95 -7.15 -1.81 -7.97 -5.86 -1.00 -6.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446119 ignored
+utt>    38  common_voice_ky_18446119  318    0    88 23 
+INFO: cmn.c(133): CMN: 55.92  5.35  2.24 -1.55  1.73 -19.54  0.34 -10.32 -0.86 -0.70 -5.63 -3.69 -3.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446118 ignored
+utt>    39  common_voice_ky_18446118  513    0   228 20 
+INFO: cmn.c(133): CMN: 57.05 -4.31  8.09 -0.12 -9.15 -11.33 -13.97 -8.62 -6.53 -3.62 -4.31 -5.36 -1.88 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446122 ignored
+utt>    40  common_voice_ky_18446122  359    0   136 26 
+INFO: cmn.c(133): CMN: 57.59 -1.34  0.11 -4.18 -3.58 -6.89 -7.05 -8.39 -3.32  2.16 -9.24 -5.95 -3.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446123 ignored
+utt>    41  common_voice_ky_18446123  350    0   128 6 
+INFO: cmn.c(133): CMN: 53.83 13.92  1.01 -1.19 -6.29 11.86  3.06  1.11 -1.38  4.61 -0.95  6.53  4.87 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446902 ignored
+utt>    42  common_voice_ky_18446902  313    0   140 21 
+INFO: cmn.c(133): CMN: 57.55 21.62  3.42 10.00 -17.94 11.82 -3.82 -8.43  0.87 -3.18  7.82 -4.61 10.64 
+utt>    43  common_voice_ky_18446903  442    0   216 11  1 3 2.419080e-12 -1.477123e+02 -6.528884e+04
+INFO: cmn.c(133): CMN: 54.13 13.50 -2.40 -4.16 -19.27 11.35 -1.37 -4.18  1.58 -5.97  3.02  2.82  3.78 
+utt>    44  common_voice_ky_18446906  282    0   104 9  1 3 2.080907e-12 -1.302680e+02 -3.673558e+04
+INFO: cmn.c(133): CMN: 56.19 14.28  2.37 15.63 -13.88 11.32 -4.68 -2.76  6.11 -6.42  4.93 -10.32 10.26 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446904 ignored
+utt>    45  common_voice_ky_18446904  373    0   168 4 
+INFO: cmn.c(133): CMN: 59.71 15.87  4.25 11.38 -16.67  8.06  5.79 -8.27 -0.06 -12.40 17.22 -5.56  9.58 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446905 ignored
+utt>    46  common_voice_ky_18446905  409    0   192 13 
+INFO: cmn.c(133): CMN: 53.74 31.30  9.28  3.38 -22.10 -0.74 -2.51 -2.27 -3.91 -0.73 -5.09 -14.96 -5.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446922 ignored
+utt>    47  common_voice_ky_18446922  209    0    84 18 
+INFO: cmn.c(133): CMN: 50.10 15.89  0.78 -0.85 -0.20  8.43 -12.38 -2.58  4.27  5.79  4.19 -7.72  2.52 
+utt>    48  common_voice_ky_18446924  371    0   124 8  1 2 1.755310e-12 -1.418913e+02 -5.264169e+04
+INFO: cmn.c(133): CMN: 49.48 17.66 13.76  4.72 -5.96  2.43 -12.79  1.57  2.79 -6.46  2.55 -11.26  7.32 
+utt>    49  common_voice_ky_18446923  379    0   168 13  2 3 3.459335e-12 -1.477819e+02 -5.600933e+04
+INFO: cmn.c(133): CMN: 47.40 23.72 -11.84 -17.58  9.22 -6.90 -17.20 13.31 -8.43  2.66 -7.54 -0.03  3.26 
+utt>    50  common_voice_ky_18446927  327    0   136 13  1 3 2.978024e-12 -1.512655e+02 -4.946382e+04
+INFO: cmn.c(133): CMN: 59.67 17.32  8.17 -12.33 -23.04  6.70 -3.13 -8.96  7.89 -3.77 -4.01  0.72 11.39 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446925 ignored
+utt>    51  common_voice_ky_18446925  464    0   172 6 
+INFO: cmn.c(133): CMN: 53.92 21.29 -2.14 -13.28  0.31 19.77 -9.26 -5.47 10.80 -3.49 -7.71 -0.94  6.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446929 ignored
+utt>    52  common_voice_ky_18446929  339    0   160 15 
+INFO: cmn.c(133): CMN: 50.50 26.19 -5.88 -15.28  9.91  3.13 -11.34  4.64 -4.01 -3.71  5.23 -3.07  3.28 
+utt>    53  common_voice_ky_18446930  461    0   172 13  1 3 2.202653e-12 -1.496090e+02 -6.896975e+04
+INFO: cmn.c(133): CMN: 58.05 18.97 -2.73 -15.19  5.52  5.42 -2.58  2.39  9.83 -3.66 -5.89  5.33  1.40 
+utt>    54  common_voice_ky_18446931  345    0   120 13  1 3 2.644635e-12 -1.353665e+02 -4.670143e+04
+INFO: cmn.c(133): CMN: 47.56 17.70 -2.94 -11.96  2.38 12.03 -8.17  3.62  1.76 -1.46  3.00 -2.45  1.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446933 ignored
+utt>    55  common_voice_ky_18446933  505    0   132 16 
+INFO: cmn.c(133): CMN: 58.59 15.66  0.53  6.48  0.99  0.60 -9.40 11.82 14.55 -10.77  4.03 -6.24  5.38 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446934 ignored
+utt>    56  common_voice_ky_18446934  203    0    88 18 
+INFO: cmn.c(133): CMN: 56.13 14.63 -8.26  7.12  1.53 -5.13 -17.95 13.86  0.65 -19.16  6.15 -6.66  1.01 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446935 ignored
+utt>    57  common_voice_ky_18446935  410    0   148 20 
+INFO: cmn.c(133): CMN: 56.49 18.48 -8.75 -1.74 -2.09 12.01 -7.97 -0.43 10.24 -10.10 -5.26  3.87 -0.50 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446936 ignored
+utt>    58  common_voice_ky_18446936  315    0   164 2 
+INFO: cmn.c(133): CMN: 55.05 10.46 -5.08 -22.18 -1.94 11.81 -16.26  2.67  7.43 -13.82 -2.00 -0.71  3.48 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446937 ignored
+utt>    59  common_voice_ky_18446937  401    0   180 15 
+INFO: cmn.c(133): CMN: 57.79 20.56 -4.87 -8.92 -5.15  9.48 -1.35  0.48 -4.48  7.45 -3.88 -0.86  3.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446994 ignored
+utt>    60  common_voice_ky_18446994  337    0   132 3 
+INFO: cmn.c(133): CMN: 47.98 20.74 -17.46 -6.08  9.59  6.51 -12.79  0.68 -0.39 -16.60  2.17  2.52  1.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446995 ignored
+utt>    61  common_voice_ky_18446995  323    0   132 24 
+INFO: cmn.c(133): CMN: 51.53 21.34 -12.14 -0.22  6.97 12.33 -23.26 10.61 -8.51  0.65 -6.82 -2.05  4.40 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446997 ignored
+utt>    62  common_voice_ky_18446997  249    0   116 12 
+INFO: cmn.c(133): CMN: 52.76 21.80 -6.85 -14.06 -0.20  5.74 -23.65 13.18 -5.94 -0.35 -2.75  0.16  5.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18446996 ignored
+utt>    63  common_voice_ky_18446996  292    0   132 9 
+INFO: cmn.c(133): CMN: 54.74 19.99 10.47 -4.85 10.46 17.55 -28.21  2.45  7.50 -7.83 -3.02 -2.19  7.28 
+WARN: "gauden.c", line 1349: Scaling factor too small: -3982151.736779
+ERROR: "backward.c", line 1011: alpha(4.265865e-02) <> sum of alphas * betas (0.000000e+00) in frame 0
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447013 ignored
+utt>    64  common_voice_ky_18447013  382    0   144 17 
+INFO: cmn.c(133): CMN: 55.03 12.96  3.48 -7.58  2.82 10.83 -24.15  7.21  3.84 -9.05  0.97 -4.69  1.00 
+utt>    65  common_voice_ky_18447014  297    0   144 11  2 3 2.438231e-12 -1.544789e+02 -4.588023e+04
+INFO: cmn.c(133): CMN: 50.50 21.19  1.92 -9.86 -3.55 15.97 -27.18  3.94  5.64 -1.55  0.92 -8.22  7.84 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447035 ignored
+utt>    66  common_voice_ky_18447035  428    0   192 19 
+INFO: cmn.c(133): CMN: 66.08  7.00 -3.73  6.54  8.98 12.18 -24.63  0.57  8.78 -14.18  5.02 -6.18  2.65 
+utt>    67  common_voice_ky_18447016  420    0   216 16  2 4 3.307675e-12 -1.522681e+02 -6.395260e+04
+INFO: cmn.c(133): CMN: 61.77 18.12 -6.03  0.08 -3.15  5.44 -8.26 -4.84  5.56 -3.28  4.54 -1.25  0.68 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447037 ignored
+utt>    68  common_voice_ky_18447037  272    0   124 6 
+INFO: cmn.c(133): CMN: 62.07 15.30 -2.98 -3.46 -11.38 10.01 -9.98 -5.93  0.59  2.44  1.34 -13.17  3.17 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447036 ignored
+utt>    69  common_voice_ky_18447036  390    0   164 14 
+INFO: cmn.c(133): CMN: 63.34 13.73 -4.55  5.21 -1.65 16.11 -23.95 -5.23  6.16 -1.40  4.56 -12.41  9.77 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447039 ignored
+utt>    70  common_voice_ky_18447039  471    0   216 13 
+INFO: cmn.c(133): CMN: 50.58 20.56 -12.89 -9.68 -0.12  7.55 -11.76 -3.01  6.34  1.79  2.95 -5.14 -0.68 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447038 ignored
+utt>    71  common_voice_ky_18447038  508    0   200 15 
+INFO: cmn.c(133): CMN: 58.86 15.75 -4.96  0.67 -5.22 15.32 -19.85  1.44  1.35 -5.97 -7.70  5.81  2.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447063 ignored
+utt>    72  common_voice_ky_18447063  401    0   140 15 
+INFO: cmn.c(133): CMN: 61.53 11.37 -7.91  5.18  5.52  3.88 -18.05  1.12  1.07 -6.62  1.54 -9.06 10.50 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447064 ignored
+utt>    73  common_voice_ky_18447064  348    0   172 19 
+INFO: cmn.c(133): CMN: 60.87 11.21 -1.20 -7.16 -11.61 14.29 -17.89 -3.86  5.88 -14.52  2.08  0.11  1.37 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447065 ignored
+utt>    74  common_voice_ky_18447065  422    0   116 8 
+INFO: cmn.c(133): CMN: 53.99 12.16 -8.21  0.48 -4.99  5.96 -20.56 10.10 18.54 -17.50  9.36 -1.03  1.17 
+utt>    75  common_voice_ky_18447067  535    0   184 11  1 3 2.070641e-12 -1.514482e+02 -8.102476e+04
+INFO: cmn.c(133): CMN: 56.31  9.66  3.08 -0.23 -5.75  9.05 -8.31 -5.39 -11.23  1.20  2.90 -1.87  6.97 
+utt>    76  common_voice_ky_18447438  448    0   168 11  1 3 3.274065e-12 -1.458860e+02 -6.535694e+04
+INFO: cmn.c(133): CMN: 56.72 27.31 -0.05 -7.86  6.29 29.82 -34.51  7.16 -8.28 -4.36  4.12 -1.78  5.76 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447440 ignored
+utt>    77  common_voice_ky_18447440  337    0   172 22 
+INFO: cmn.c(133): CMN: 50.71 17.82  4.10 -12.24 -0.55 22.07 -27.96 -2.74 -6.64  1.86 -6.23  4.72  8.41 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447439 ignored
+utt>    78  common_voice_ky_18447439  611    0   232 4 
+INFO: cmn.c(133): CMN: 50.28 26.40 -0.99 -20.94  0.58 25.63 -26.82  2.90  5.30  0.06  2.36  1.17  4.88 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447441 ignored
+utt>    79  common_voice_ky_18447441  527    0   176 12 
+INFO: cmn.c(133): CMN: 49.13 17.50 -0.70 -0.50 -6.04 22.88 -19.03 -5.20 -7.73  3.45  8.21 -10.16 11.57 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447442 ignored
+utt>    80  common_voice_ky_18447442  306    0   104 10 
+INFO: cmn.c(133): CMN: 53.93 20.32 -1.16  2.17 -0.48 17.88 -9.06 -7.42  3.69 -14.32  6.19  6.78  6.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447746 ignored
+utt>    81  common_voice_ky_18447746  274    0   104 13 
+INFO: cmn.c(133): CMN: 50.22 11.19 -1.55  6.36 -5.24  6.99 -10.84 -9.66  2.25  3.92  2.10  4.56  7.32 
+WARN: "gauden.c", line 1349: Scaling factor too small: -11402589.163140
+ERROR: "backward.c", line 1011: alpha(4.265865e-02) <> sum of alphas * betas (0.000000e+00) in frame 0
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447744 ignored
+utt>    82  common_voice_ky_18447744  478    0   164 12 
+INFO: cmn.c(133): CMN: 54.27 15.68 -0.63  6.40 -1.16 13.28 -14.04 -6.68 -0.99  0.55 -5.29  3.28  1.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447748 ignored
+utt>    83  common_voice_ky_18447748  365    0   144 16 
+INFO: cmn.c(133): CMN: 52.82 17.87 -4.29 -6.05 -4.16 17.54 -11.38 -3.91  0.87  4.08 -3.16 -0.43  8.12 
+WARN: "gauden.c", line 1349: Scaling factor too small: -5242500.215585
+ERROR: "backward.c", line 1011: alpha(4.265865e-02) <> sum of alphas * betas (0.000000e+00) in frame 0
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447749 ignored
+utt>    84  common_voice_ky_18447749  351    0   132 12 
+INFO: cmn.c(133): CMN: 44.19 20.71 -1.14  5.17  0.93 12.25 -19.66 -13.00 -5.40 -2.70  2.62  9.18  6.06 
+utt>    85  common_voice_ky_18447774  512    0   192 12  1 3 2.662610e-12 -1.478664e+02 -7.570760e+04
+INFO: cmn.c(133): CMN: 52.73 15.31  2.72  2.38 -0.07 20.25 -22.12 -4.37 -5.53 -2.17  1.80 -3.56 11.75 
+utt>    86  common_voice_ky_18447776  369    0   116 10  1 2 1.483520e-12 -1.449626e+02 -5.349121e+04
+INFO: cmn.c(133): CMN: 50.57 23.50 -1.53  0.98 -6.01 17.82 -17.00 -17.26 -0.05 -4.61  1.44  0.98  5.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447775 ignored
+utt>    87  common_voice_ky_18447775  442    0   144 7 
+INFO: cmn.c(133): CMN: 53.25 15.43 -1.55 10.30  3.56 13.06 -19.09 -7.92 -4.35 -5.10  2.88 -2.57 13.56 
+utt>    88  common_voice_ky_18447777  550    0   232 11  1 3 2.364961e-12 -1.283848e+02 -7.061164e+04
+INFO: cmn.c(133): CMN: 55.58 24.46 -8.40  0.83 -1.11 10.80 -19.28 -7.04 -8.37  2.00  0.02  4.50 11.88 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447778 ignored
+utt>    89  common_voice_ky_18447778  397    0   148 15 
+INFO: cmn.c(133): CMN: 53.31 20.12 -1.20 -3.33 -4.30  8.80 -13.87 -8.02  0.80 -2.59 -1.88  1.60  4.36 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447812 ignored
+utt>    90  common_voice_ky_18447812  514    0   192 16 
+INFO: cmn.c(133): CMN: 51.49 17.09  0.66  0.81 -2.43 22.14 -22.68 -12.33  4.61  6.86 -4.58  5.40  7.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447814 ignored
+utt>    91  common_voice_ky_18447814  371    0   124 12 
+INFO: cmn.c(133): CMN: 52.10 15.90 -2.96 21.79 14.08  8.66 -24.06  2.42  2.77 -8.30  4.26  6.84  7.16 
+utt>    92  common_voice_ky_18447815  406    0   144 12  1 3 2.136551e-12 -1.490347e+02 -6.050807e+04
+INFO: cmn.c(133): CMN: 53.32 25.70  1.93 -10.67 -11.11  8.68 -2.73  2.66 -19.28 -5.15  5.16 -0.46  5.77 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447829 ignored
+utt>    93  common_voice_ky_18447829  354    0   116 16 
+INFO: cmn.c(133): CMN: 55.83 20.36 -1.38 14.42  4.93  9.11 -22.80 -10.67 -4.60  0.04  3.39  0.11  8.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447817 ignored
+utt>    94  common_voice_ky_18447817  502    0   196 4 
+INFO: cmn.c(133): CMN: 54.11 24.11 -7.34 -0.04 -4.54 14.68 -15.93 -2.45 -1.56 -1.57  3.69 -0.68 12.69 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447831 ignored
+utt>    95  common_voice_ky_18447831  451    0   184 15 
+INFO: cmn.c(133): CMN: 54.84 17.15 -3.03  6.85 -2.86  5.93 -16.69 -6.57  5.11 -3.51  3.14 -2.43  6.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447830 ignored
+utt>    96  common_voice_ky_18447830  698    0   224 18 
+INFO: cmn.c(133): CMN: 55.09 15.08  2.91  6.71 -2.07 16.92 -13.78 -10.49 -1.42 -3.45  1.74  4.24 10.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447832 ignored
+utt>    97  common_voice_ky_18447832  549    0   228 14 
+INFO: cmn.c(133): CMN: 54.32 17.66  1.16 -1.05 -4.53 14.03 -15.78 -7.22 -0.35 -1.42 -4.31 -0.17  8.79 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447833 ignored
+utt>    98  common_voice_ky_18447833  598    0   220 15 
+INFO: cmn.c(133): CMN: 57.60 19.14  0.84  9.25 -6.71 13.36 -19.05 -5.65  0.72 -6.13  3.84  0.97 12.80 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447869 ignored
+utt>    99  common_voice_ky_18447869  402    0   192 4 
+INFO: cmn.c(133): CMN: 53.14 14.04 -1.57 11.38  8.58 16.63 -22.47  3.53 -2.38 -4.52 -1.66  0.15 11.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447870 ignored
+utt>   100  common_voice_ky_18447870  352    0   136 12 
+INFO: cmn.c(133): CMN: 47.30  5.53  2.08  3.41  3.19  6.03 -18.79  0.87  0.67 -3.97  0.31  0.21  4.51 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447871 ignored
+utt>   101  common_voice_ky_18447871  401    0   112 9 
+INFO: cmn.c(133): CMN: 51.59 10.49  3.53  2.35 -9.74  6.81 -24.46 -1.99 -9.49 -0.24 -3.03 -4.43  5.72 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447894 ignored
+utt>   102  common_voice_ky_18447894  194    0    72 14 
+INFO: cmn.c(133): CMN: 53.73 10.65 -2.87  1.72 -1.27 12.11 -23.30 -3.97 -1.91 -6.63  1.61 -6.62  3.64 
+utt>   103  common_voice_ky_18447875  624    0   180 10  1 2 2.270148e-12 -1.437587e+02 -8.970542e+04
+INFO: cmn.c(133): CMN: 58.33 21.26  1.21 11.12  1.50 12.63 -24.39 -3.10 -1.47 -2.49  2.80 -3.78  9.33 
+utt>   104  common_voice_ky_18447873  614    0   232 14  2 3 2.820036e-12 -1.520609e+02 -9.336541e+04
+INFO: cmn.c(133): CMN: 56.73 12.78 -2.56  9.70 -10.45  8.90 -24.59 -5.69 -0.79  7.16  0.05 -3.79  8.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447895 ignored
+utt>   105  common_voice_ky_18447895  356    0   188 17 
+INFO: cmn.c(133): CMN: 56.42  4.22  8.04 14.01 -1.85 -2.80 -16.52 -0.50 -2.36  2.99 -2.87 -1.88  9.68 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447896 ignored
+utt>   106  common_voice_ky_18447896  374    0   184 18 
+INFO: cmn.c(133): CMN: 54.69 11.04 -0.94 26.95 -0.58 -4.11 -24.67 -0.77 -9.32 -1.13  1.88 -7.38  9.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447898 ignored
+utt>   107  common_voice_ky_18447898  358    0   136 18 
+INFO: cmn.c(133): CMN: 52.66  9.89 -0.18  8.71 -4.51 -3.02 -19.12 -7.33 -6.21  4.27  1.87 -7.32  7.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447897 ignored
+utt>   108  common_voice_ky_18447897  563    0   232 15 
+INFO: cmn.c(133): CMN: 60.03  8.52 -8.54  8.44 -12.30 -9.28 -20.69  0.50 -1.81  8.35  3.82 -14.31  8.59 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447909 ignored
+utt>   109  common_voice_ky_18447909  350    0   136 4 
+INFO: cmn.c(133): CMN: 60.30  0.41 -1.13  7.03 -3.55 -0.97 -19.07 -11.99  0.69  9.41  6.03 -5.85  3.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447911 ignored
+utt>   110  common_voice_ky_18447911  443    0   200 16 
+INFO: cmn.c(133): CMN: 57.07 10.64  0.06  5.82 -8.12  0.93 -17.67 -4.61 -4.78  1.58  1.98 -3.62  4.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447907 ignored
+utt>   111  common_voice_ky_18447907  616    0   216 6 
+INFO: cmn.c(133): CMN: 55.87  8.54 -1.79  9.98 -1.25 -5.22 -17.05 -4.04  1.12  5.18  3.65 -9.84  6.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447913 ignored
+utt>   112  common_voice_ky_18447913  555    0   200 9 
+INFO: cmn.c(133): CMN: 60.33 11.42 -7.00  9.73 -5.26  2.86 -23.14 -4.53  0.32 12.23  5.15 -5.67  4.80 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447920 ignored
+utt>   113  common_voice_ky_18447920  437    0   204 23 
+INFO: cmn.c(133): CMN: 56.53 12.56 -1.54 15.31 -9.70  0.25 -15.31 -1.69 -2.51  2.13  3.97 -1.48  6.96 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447921 ignored
+utt>   114  common_voice_ky_18447921  518    0   212 12 
+INFO: cmn.c(133): CMN: 59.00  5.40 -1.46 12.81 -5.03 -1.83 -26.03 -7.61 -0.26  2.23  1.18 -9.77  6.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447919 ignored
+utt>   115  common_voice_ky_18447919  526    0   212 10 
+INFO: cmn.c(133): CMN: 56.36  7.94 -6.66 16.76 -4.24 -2.93 -23.51 -3.47 -3.89  7.31  4.60 -6.21  8.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447922 ignored
+utt>   116  common_voice_ky_18447922  567    0   224 15 
+INFO: cmn.c(133): CMN: 56.34 10.46 -0.79  9.59 -6.14 -1.55 -18.83  1.19  1.18  6.14  2.52 -12.29  4.16 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447944 ignored
+utt>   117  common_voice_ky_18447944  481    0   180 7 
+INFO: cmn.c(133): CMN: 57.10  9.78  4.34 19.85 -7.02 -0.59 -19.20  0.46 -14.67  0.91  4.81 -8.12  7.05 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447923 ignored
+utt>   118  common_voice_ky_18447923  477    0   188 19 
+INFO: cmn.c(133): CMN: 56.46  8.71 -1.10  4.85 -5.45 -6.91 -12.07 -5.36  0.20  6.15  8.29 -8.37  6.43 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447945 ignored
+utt>   119  common_voice_ky_18447945  459    0   168 21 
+INFO: cmn.c(133): CMN: 51.74  0.19  2.08 14.30 -6.57 -13.09 -19.80 -2.52  0.83  2.61  1.95 -1.33  8.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447946 ignored
+utt>   120  common_voice_ky_18447946  304    0   104 4 
+INFO: cmn.c(133): CMN: 56.41 12.06  2.27 -2.50 -9.11  1.45 -15.10 -9.43 -5.10  6.56  7.21 -7.99  4.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447948 ignored
+utt>   121  common_voice_ky_18447948  400    0   188 13 
+INFO: cmn.c(133): CMN: 60.43  8.76 -2.38 14.99 -4.02 -6.48 -25.26  1.85 -3.50  7.57  7.86 -7.67 10.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447947 ignored
+utt>   122  common_voice_ky_18447947  343    0   144 9 
+INFO: cmn.c(133): CMN: 56.23  9.78  2.54  8.09 -13.55 -4.77 -13.68 -8.29 -5.37 10.16  6.05 -7.19  3.63 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447974 ignored
+utt>   123  common_voice_ky_18447974  362    0   160 16 
+INFO: cmn.c(133): CMN: 57.30 10.33 -6.54  5.25 -8.78 -1.31 -20.00 -6.14 -2.61  9.08  6.54 -9.45 10.39 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447973 ignored
+utt>   124  common_voice_ky_18447973  605    0   216 7 
+INFO: cmn.c(133): CMN: 54.63  2.32 10.89  8.52 -10.98  4.40 -15.20  3.28 -6.80  8.41  4.61 -3.13  3.72 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447976 ignored
+utt>   125  common_voice_ky_18447976  404    0   184 16 
+INFO: cmn.c(133): CMN: 51.87  4.96  4.39 12.39  6.24 -10.79 -18.61 -1.38 -7.50 -3.39  7.12 -9.18  3.37 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447975 ignored
+utt>   126  common_voice_ky_18447975  444    0   188 7 
+INFO: cmn.c(133): CMN: 56.88 10.12 -0.39  0.32 -7.96  6.23 -19.51  1.36  6.78 -0.48  7.85 -5.08 -0.18 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447977 ignored
+utt>   127  common_voice_ky_18447977  341    0   144 20 
+INFO: cmn.c(133): CMN: 58.38 10.42 -4.41  3.06 -9.13  0.59 -18.01  1.09 -5.08  8.01  9.01  0.43  3.70 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447983 ignored
+utt>   128  common_voice_ky_18447983  261    0   120 17 
+INFO: cmn.c(133): CMN: 59.73  8.39 -3.82 10.50 -12.10  9.85 -26.41 -1.75 -3.42 10.40  3.57 -5.97  6.95 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447985 ignored
+utt>   129  common_voice_ky_18447985  411    0   200 17 
+INFO: cmn.c(133): CMN: 58.66 11.62  1.97 12.67 -16.87  8.19 -23.97  1.62 -11.20  5.57  3.89 -5.56  9.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447984 ignored
+utt>   130  common_voice_ky_18447984  376    0   180 13 
+INFO: cmn.c(133): CMN: 54.58 12.60 -2.45 29.52 -1.66  1.06 -32.21  5.44 -7.27  3.47  5.10 -6.79 11.38 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447987 ignored
+utt>   131  common_voice_ky_18447987  259    0   112 8 
+INFO: cmn.c(133): CMN: 57.14 11.00 -0.35 21.75 -9.43  4.73 -28.24 -5.51  0.90  6.57 -1.09 -7.14  8.61 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18447986 ignored
+utt>   132  common_voice_ky_18447986  406    0   196 19 
+INFO: cmn.c(133): CMN: 55.14  6.90 -4.07 16.80 -13.51  0.30 -22.60 -0.14 -3.33  0.92  3.03 -6.02 11.11 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448013 ignored
+utt>   133  common_voice_ky_18448013  389    0   172 15 
+INFO: cmn.c(133): CMN: 58.29  8.06 -6.77 10.57 -6.52  0.33 -23.19  4.76 -10.03 11.16  8.70 -12.30 11.38 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448015 ignored
+utt>   134  common_voice_ky_18448015  383    0   192 18 
+INFO: cmn.c(133): CMN: 52.85  7.93  2.70 -0.41 -12.20 -0.05 -14.92  1.57 -8.60  7.75  6.20 -3.34  8.86 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448017 ignored
+utt>   135  common_voice_ky_18448017  402    0   184 23 
+INFO: cmn.c(133): CMN: 56.45  7.37 -4.78 15.50 -6.43 -9.70 -29.97 11.02 -10.81 17.53 -3.43 -3.26 12.84 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448022 ignored
+utt>   136  common_voice_ky_18448022  307    0   148 16 
+INFO: cmn.c(133): CMN: 56.49  3.28  1.38 13.62 -12.69  3.26 -20.91 -0.20 -5.53  9.02  5.43 -2.81  4.91 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448031 ignored
+utt>   137  common_voice_ky_18448031  384    0   132 14 
+INFO: cmn.c(133): CMN: 58.44  9.99  4.47  8.24 -10.75  4.76 -23.60 -0.20 -12.97 13.45 10.50 -4.31 10.89 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448032 ignored
+utt>   138  common_voice_ky_18448032  349    0   160 12 
+INFO: cmn.c(133): CMN: 59.36  6.63  0.44  7.26 -4.21  1.33 -27.07  0.65 -5.77 12.19  4.02 -5.52  7.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448034 ignored
+utt>   139  common_voice_ky_18448034  375    0   184 19 
+INFO: cmn.c(133): CMN: 54.51 12.37 -2.37 10.16 -7.45  1.88 -18.45 -1.90 -5.13  2.53  3.05 -5.86  5.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448035 ignored
+utt>   140  common_voice_ky_18448035  440    0   196 21 
+INFO: cmn.c(133): CMN: 55.87  9.58 -4.39  6.20 -9.06  0.29 -20.10 -3.52 -6.79 11.57  6.35 -6.65 13.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448037 ignored
+utt>   141  common_voice_ky_18448037  444    0   192 19 
+INFO: cmn.c(133): CMN: 58.41  9.55 -0.66 14.80 -4.65 -3.59 -22.05  1.26 -5.47 10.13  4.25 -6.55  3.55 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448063 ignored
+utt>   142  common_voice_ky_18448063  469    0   220 15 
+INFO: cmn.c(133): CMN: 55.78  7.45  6.80 -1.78 -14.14  7.80 -12.13 -0.93 -8.69 15.21  7.43 -1.16  4.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448064 ignored
+utt>   143  common_voice_ky_18448064  363    0   152 15 
+INFO: cmn.c(133): CMN: 52.24  3.71 -0.42  0.33 -8.30 -3.01 -14.34 -2.30 -1.17  7.20 -1.44 -1.34  2.10 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448065 ignored
+utt>   144  common_voice_ky_18448065  376    0   132 12 
+INFO: cmn.c(133): CMN: 59.27  9.33 -0.88  4.95 -11.23 -5.91 -22.35 -2.78 -1.87  7.94  2.11 -10.75 10.58 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448089 ignored
+utt>   145  common_voice_ky_18448089  274    0   116 15 
+INFO: cmn.c(133): CMN: 59.31 11.59  2.25  5.43 -14.06  8.65 -21.02 -2.75 -7.83 16.84  3.28 -5.55  6.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448090 ignored
+utt>   146  common_voice_ky_18448090  363    0   184 20 
+INFO: cmn.c(133): CMN: 55.45  3.83  0.01 12.16 -1.36 -10.20 -22.24  9.12 -12.32 10.03  3.63 -10.47  3.56 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448091 ignored
+utt>   147  common_voice_ky_18448091  392    0   172 17 
+INFO: cmn.c(133): CMN: 55.46  7.49  4.76 12.06 -6.67 -9.12 -18.09  4.36 -5.20  9.70  2.81 -4.59  7.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448088 ignored
+utt>   148  common_voice_ky_18448088  538    0   220 20 
+INFO: cmn.c(133): CMN: 55.52  5.76  1.84 12.98 -9.79 -11.44 -19.65 -1.48 -5.69  8.89 -1.48 -5.78  7.50 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448092 ignored
+utt>   149  common_voice_ky_18448092  465    0   176 11 
+INFO: cmn.c(133): CMN: 58.35 -0.49  3.66 19.32 -8.39 -15.59 -20.71 14.99 -11.19 12.40 -0.04 -2.34  9.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448119 ignored
+utt>   150  common_voice_ky_18448119  220    0    96 17 
+INFO: cmn.c(133): CMN: 57.96  4.82  6.11 12.94 -7.60 -14.19 -20.08 12.02 -12.39  6.23 -7.02 -2.46  5.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448112 ignored
+utt>   151  common_voice_ky_18448112  424    0   176 10 
+INFO: cmn.c(133): CMN: 56.34  4.25  2.79 14.29 -2.19 -3.87 -29.15 -3.29 -9.31  9.39 -0.35 -8.78  4.10 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448121 ignored
+utt>   152  common_voice_ky_18448121  393    0   188 2 
+INFO: cmn.c(133): CMN: 59.21  2.39  2.73 10.90 -8.28 -5.67 -19.19  1.97 -7.82  5.19  6.15 -5.90  7.43 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448122 ignored
+utt>   153  common_voice_ky_18448122  412    0   220 9 
+INFO: cmn.c(133): CMN: 59.77  6.91 -0.71 10.95 -3.51 -1.76 -19.68  2.15 -2.35  7.32  2.24 -12.99  7.42 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448140 ignored
+utt>   154  common_voice_ky_18448140  239    0   120 19 
+INFO: cmn.c(133): CMN: 56.19  4.88  3.42 18.31 -3.30 -5.15 -19.84  2.10 -9.88  5.39  2.59 -4.24  7.17 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448138 ignored
+utt>   155  common_voice_ky_18448138  449    0   228 11 
+INFO: cmn.c(133): CMN: 57.45  3.76  2.60  7.54 -2.74 -6.29 -15.83  3.05 -5.20  7.78 -2.14 -9.04  6.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448139 ignored
+utt>   156  common_voice_ky_18448139  505    0   180 19 
+INFO: cmn.c(133): CMN: 61.51 13.91  1.29  6.14 -7.87 -1.49 -14.60  1.61 -11.27  7.01  6.73 -3.29  6.10 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448141 ignored
+utt>   157  common_voice_ky_18448141  454    0   228 20 
+INFO: cmn.c(133): CMN: 58.65  6.34 -1.19 10.84 -2.32 -10.56 -24.36  7.06 -2.07  8.38  3.48 -9.42 13.85 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448142 ignored
+utt>   158  common_voice_ky_18448142  301    0   104 5 
+INFO: cmn.c(133): CMN: 57.52 10.42  4.93 -1.49 -13.44  0.68 -13.28 -2.34 -1.29  9.83  4.79 -5.13  4.82 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448161 ignored
+utt>   159  common_voice_ky_18448161  384    0   180 3 
+INFO: cmn.c(133): CMN: 60.10  9.04 -0.79  5.00 -4.17 -5.01 -14.06  4.03  2.69 11.02  2.63 -9.07  5.45 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448159 ignored
+utt>   160  common_voice_ky_18448159  223    0   104 15 
+INFO: cmn.c(133): CMN: 58.11  2.77  1.16 16.54 -5.18 -5.18 -25.86  8.30 -1.93 14.91  4.85 -8.45 10.75 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448163 ignored
+utt>   161  common_voice_ky_18448163  394    0   144 26 
+INFO: cmn.c(133): CMN: 58.09  5.95  3.62  5.99 -2.74  1.49 -22.75  5.48 -10.13  3.33  0.03 -4.86  6.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448166 ignored
+utt>   162  common_voice_ky_18448166  367    0   168 16 
+INFO: cmn.c(133): CMN: 55.03  5.57  4.48  6.29 -5.83 -7.59 -22.90  6.93 -6.46 11.94  3.68 -1.67  8.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448184 ignored
+utt>   163  common_voice_ky_18448184  308    0   164 21 
+INFO: cmn.c(133): CMN: 57.34  1.96  1.52 14.72 -3.29 -10.06 -23.40  5.33 -12.24  8.44  3.45 -8.90  7.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448183 ignored
+utt>   164  common_voice_ky_18448183  445    0   200 19 
+INFO: cmn.c(133): CMN: 56.35 11.37  6.43  6.89 -2.86  3.58 -22.63 -1.66 -6.28 11.00  6.99 -13.06 13.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448185 ignored
+utt>   165  common_voice_ky_18448185  307    0   132 13 
+INFO: cmn.c(133): CMN: 59.49  6.02 -2.24  9.10 -13.41 -3.42 -22.16  5.70 -8.02 11.34  0.88 -9.92 10.18 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448186 ignored
+utt>   166  common_voice_ky_18448186  326    0   128 10 
+INFO: cmn.c(133): CMN: 50.13  5.62  7.43  3.43 -8.75  5.80 -24.33  8.52 -5.28 15.39  0.46 -5.30  4.11 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448208 ignored
+utt>   167  common_voice_ky_18448208  262    0   100 19 
+INFO: cmn.c(133): CMN: 57.29 11.39  6.58  3.48 -12.78  0.95 -20.58  2.04 -11.32  8.48  2.66 -3.54  8.72 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448209 ignored
+utt>   168  common_voice_ky_18448209  338    0   144 15 
+INFO: cmn.c(133): CMN: 56.19  8.61  0.33 13.91  1.13 -7.21 -29.89  7.87 -8.05 10.02 -4.17 -9.58 14.95 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448212 ignored
+utt>   169  common_voice_ky_18448212  243    0   112 6 
+INFO: cmn.c(133): CMN: 58.69  4.07  1.17 10.68 -8.19  3.66 -20.99 -0.26 -5.23 16.91  1.12 -7.81  9.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448211 ignored
+utt>   170  common_voice_ky_18448211  402    0   156 16 
+INFO: cmn.c(133): CMN: 56.25  5.32  7.57 19.79  4.09 -6.21 -26.48  9.78 -13.36  3.48  1.72 -13.29 12.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448210 ignored
+utt>   171  common_voice_ky_18448210  496    0   220 3 
+INFO: cmn.c(133): CMN: 55.46  5.37 -3.19 18.59 -10.60 -13.13 -19.59  9.55 -10.19 11.44 -10.39  2.35  6.05 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448238 ignored
+utt>   172  common_voice_ky_18448238  407    0   152 16 
+INFO: cmn.c(133): CMN: 51.92  7.18 13.49 15.76 -7.43 -1.91 -24.61 13.32 -16.40 13.07  0.46 -3.66 12.05 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448240 ignored
+utt>   173  common_voice_ky_18448240  278    0   148 22 
+INFO: cmn.c(133): CMN: 52.75  8.78 -1.27 18.99 -6.53 -11.62 -22.03  4.52 -10.04 13.18 -11.11  2.37  8.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448239 ignored
+utt>   174  common_voice_ky_18448239  529    0   196 7 
+INFO: cmn.c(133): CMN: 54.93 11.25  3.33 18.38 -11.02 -5.38 -23.51  7.36 -12.21  1.06  1.11 -8.21 12.90 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448244 ignored
+utt>   175  common_voice_ky_18448244  436    0   208 6 
+INFO: cmn.c(133): CMN: 57.72 11.04 -0.16 12.87 -12.40  3.43 -20.74  1.91 -5.22  7.49 -0.06 -9.38 11.92 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448241 ignored
+utt>   176  common_voice_ky_18448241  531    0   208 16 
+INFO: cmn.c(133): CMN: 54.01  6.28  5.68 16.95 -11.54 -10.57 -13.87  0.83 -12.63  8.29 -1.40 -4.87  8.34 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448253 ignored
+utt>   177  common_voice_ky_18448253  340    0   140 20 
+INFO: cmn.c(133): CMN: 55.17  7.20  0.35 14.91 -6.89 -2.72 -21.08  5.21 -10.21  4.92  0.19 -7.97 10.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448256 ignored
+utt>   178  common_voice_ky_18448256  357    0   156 18 
+INFO: cmn.c(133): CMN: 58.25 11.01  3.77 18.43 -2.25 -3.26 -20.90  1.37 -5.22 -1.06 -0.65 -6.88  9.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448254 ignored
+utt>   179  common_voice_ky_18448254  489    0   212 20 
+INFO: cmn.c(133): CMN: 54.53  7.94  1.84 12.59 -14.47  0.76 -15.29  1.74 -11.34  9.95  0.69 -7.03  9.38 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448257 ignored
+utt>   180  common_voice_ky_18448257  429    0   160 18 
+INFO: cmn.c(133): CMN: 56.32  1.85  2.69 22.86 -8.37 -5.91 -20.37 12.13 -8.25 -0.73 -4.64 -7.28 13.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448283 ignored
+utt>   181  common_voice_ky_18448283  369    0   140 15 
+INFO: cmn.c(133): CMN: 53.92  0.57 -0.47  7.53 -14.84 -2.06 -18.42  6.53 -8.28 10.73 -4.80 -2.55  9.91 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448285 ignored
+utt>   182  common_voice_ky_18448285  261    0    92 16 
+INFO: cmn.c(133): CMN: 55.05  5.09 -1.19 21.04 -5.71 -3.17 -27.04  1.95 -5.15  8.60 -7.12 -10.73 10.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448287 ignored
+utt>   183  common_voice_ky_18448287  527    0   208 19 
+INFO: cmn.c(133): CMN: 53.69  1.58 -0.68 18.44 -5.97 -8.59 -21.78  4.80 -9.51 12.41 -2.89 -5.21  9.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448289 ignored
+utt>   184  common_voice_ky_18448289  428    0   208 17 
+INFO: cmn.c(133): CMN: 55.43  9.83 -3.81 12.96 -15.78 -1.17 -18.78  3.25 -10.41 11.58  8.27 -2.11  9.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448299 ignored
+utt>   185  common_voice_ky_18448299  343    0   148 10 
+INFO: cmn.c(133): CMN: 53.45 16.78  0.24 10.92 -17.90 -0.92 -12.79  1.73 -7.73  8.68  2.69 -4.08  8.55 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448298 ignored
+utt>   186  common_voice_ky_18448298  432    0   168 20 
+INFO: cmn.c(133): CMN: 56.28  6.62 -1.56 11.64 -10.55 -2.52 -11.91  1.22  3.36 12.90 -2.64 -3.75  5.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448301 ignored
+utt>   187  common_voice_ky_18448301  429    0   144 19 
+INFO: cmn.c(133): CMN: 57.07  2.66 -0.88 18.16 -11.67 -10.07 -15.53  2.49 -8.23  3.64  1.53 -4.53  3.85 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448302 ignored
+utt>   188  common_voice_ky_18448302  489    0   196 16 
+INFO: cmn.c(133): CMN: 58.14  7.87  0.64  8.91 -9.07 -7.08 -17.80  9.37 -10.34  8.48 -1.64 -4.20 11.99 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448316 ignored
+utt>   189  common_voice_ky_18448316  500    0   184 18 
+INFO: cmn.c(133): CMN: 53.31  3.76  3.23 16.73 -5.21 -9.09 -17.01  5.17 -4.93  3.36 -3.40 -2.30  9.37 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448314 ignored
+utt>   190  common_voice_ky_18448314  410    0   184 7 
+INFO: cmn.c(133): CMN: 60.28  9.55 -7.90 -1.51 -14.74  0.18 -11.60 -0.87 -2.09 14.01  1.52 -5.24  3.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448318 ignored
+utt>   191  common_voice_ky_18448318  431    0   172 4 
+INFO: cmn.c(133): CMN: 52.98  7.94 -7.10 16.86 -1.94 -9.60 -21.71 -1.22 -11.12  8.40  4.26 -7.97  6.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448320 ignored
+utt>   192  common_voice_ky_18448320  458    0   204 7 
+INFO: cmn.c(133): CMN: 55.41  9.03  2.94 11.94 -7.48 -7.49 -15.15  6.32 -2.30 10.59 -0.88 -5.04 12.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448321 ignored
+utt>   193  common_voice_ky_18448321  395    0   192 19 
+INFO: cmn.c(133): CMN: 57.55  7.66 -0.69 20.66 -14.23  0.82 -19.31  1.59 -0.02  6.26 -1.06 -7.65  8.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448358 ignored
+utt>   194  common_voice_ky_18448358  384    0   188 20 
+INFO: cmn.c(133): CMN: 55.98  5.56 10.09  9.76 -0.06 -2.56 -17.54  3.21 -3.57  4.87 -2.40 -3.86  9.75 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448360 ignored
+utt>   195  common_voice_ky_18448360  415    0   192 16 
+INFO: cmn.c(133): CMN: 54.55 10.02  1.26 12.28 -13.58 -2.40 -13.56  2.78 -7.70 14.12 -2.78 -4.55  6.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448362 ignored
+utt>   196  common_voice_ky_18448362  257    0   100 10 
+INFO: cmn.c(133): CMN: 53.71  7.79  2.91 20.74 -7.94 -11.87 -14.30  4.26 -2.88  4.40 -4.63 -0.63  9.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448361 ignored
+utt>   197  common_voice_ky_18448361  372    0   176 5 
+INFO: cmn.c(133): CMN: 60.37 12.05 -3.65 16.05 -16.70 -6.44 -13.67  3.19 -5.84  7.03 -6.65 -0.96  9.19 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448373 ignored
+utt>   198  common_voice_ky_18448373  493    0   192 20 
+INFO: cmn.c(133): CMN: 52.68 -0.47 -6.56 11.16 -8.05 -9.11 -22.66  1.76 -7.83 14.38 -7.64 -2.22  8.61 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448376 ignored
+utt>   199  common_voice_ky_18448376  211    0   104 16 
+INFO: cmn.c(133): CMN: 53.14 11.00 -1.56 20.97 -6.10 -11.40 -16.69  2.17 -11.95  5.77 -4.84 -3.10 11.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448374 ignored
+utt>   200  common_voice_ky_18448374  460    0   196 10 
+INFO: cmn.c(133): CMN: 58.73  8.68 -5.21 23.92 -10.15 -6.99 -20.25  3.43 -12.65  6.64 -7.05 -4.94  7.58 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448377 ignored
+utt>   201  common_voice_ky_18448377  395    0   172 4 
+INFO: cmn.c(133): CMN: 55.02  6.56  1.01  8.86 -9.16 -3.75 -13.42 -0.52 -5.11 10.01 -2.36 -6.29  9.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448403 ignored
+utt>   202  common_voice_ky_18448403  431    0   160 4 
+INFO: cmn.c(133): CMN: 53.87  9.99  1.67 14.53 -6.88 -7.84 -13.95  0.44 -11.01 10.01  0.40 -7.03 12.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448405 ignored
+utt>   203  common_voice_ky_18448405  424    0   208 24 
+INFO: cmn.c(133): CMN: 55.56  6.84  4.74  6.52 -16.14  1.30 -11.97  0.11 -8.74 10.21  4.00 -2.02 11.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448407 ignored
+utt>   204  common_voice_ky_18448407  433    0   196 13 
+INFO: cmn.c(133): CMN: 57.13  7.00  1.54 22.50  0.01 -5.13 -25.55  0.84 -11.60  9.63 -1.43 -10.93 16.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448410 ignored
+utt>   205  common_voice_ky_18448410  351    0   176 20 
+INFO: cmn.c(133): CMN: 53.47  5.41  2.24 17.21 -13.42 -16.00 -15.92  9.83 -12.99  9.03 -7.47 -3.99  4.18 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448419 ignored
+utt>   206  common_voice_ky_18448419  341    0   156 20 
+INFO: cmn.c(133): CMN: 58.20  7.34  4.13 13.58 -7.23 -9.30 -16.16  2.16 -1.98  5.85  3.91 -2.55 12.58 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448420 ignored
+utt>   207  common_voice_ky_18448420  420    0   196 18 
+INFO: cmn.c(133): CMN: 55.58  9.99  6.85  2.58 -1.74 -7.38 -19.13  4.59 -10.65  8.49 -3.97 -6.54  7.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448421 ignored
+utt>   208  common_voice_ky_18448421  506    0   204 21 
+INFO: cmn.c(133): CMN: 54.87  3.98  4.46 13.72 -5.11 -11.22 -20.10  5.21 -7.01  5.68 -1.70 -5.69  6.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448424 ignored
+utt>   209  common_voice_ky_18448424  511    0   224 10 
+INFO: cmn.c(133): CMN: 52.30  5.38  0.53 -3.17 -10.65 -0.77 -14.06 -1.17 -7.19  8.45 -2.76 -0.35  0.66 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448562 ignored
+utt>   210  common_voice_ky_18448562  483    0   216 17 
+INFO: cmn.c(133): CMN: 56.70  7.97  5.08 17.83  3.27  0.86 -19.01  2.99  5.52 -0.74  1.34  1.44 -1.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448564 ignored
+utt>   211  common_voice_ky_18448564  494    0   232 9 
+INFO: cmn.c(133): CMN: 55.98 14.25  1.10  2.72 -16.14  1.48 -8.43 -0.62  6.11 -5.61 11.06 -4.35  4.04 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448565 ignored
+utt>   212  common_voice_ky_18448565  289    0   104 15 
+INFO: cmn.c(133): CMN: 52.84  8.07  3.50  6.98 -2.81  8.72 -22.18  0.94  4.59 -1.46 12.10 -1.62 -0.36 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448612 ignored
+utt>   213  common_voice_ky_18448612  225    0    84 15 
+INFO: cmn.c(133): CMN: 58.07 14.39  2.85 13.42 -3.61 -5.83 -17.60  1.15  4.73 -3.73  9.79  0.01  4.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448567 ignored
+utt>   214  common_voice_ky_18448567  413    0   228 7 
+INFO: cmn.c(133): CMN: 56.81  5.85  5.34 12.60 -13.02 11.14 -7.50 -5.85 -4.94 11.15  3.66 -2.44  4.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448613 ignored
+utt>   215  common_voice_ky_18448613  506    0   220 4 
+INFO: cmn.c(133): CMN: 59.47 10.22  2.79 14.04 -0.67  6.51 -27.93 -7.33 -1.08 -1.33  9.67 -1.52 -2.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448615 ignored
+utt>   216  common_voice_ky_18448615  457    0   212 21 
+INFO: cmn.c(133): CMN: 55.03  4.69  7.50  8.15  0.27  7.44 -23.72  4.09  2.85  4.42 14.87 -3.37  0.23 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448618 ignored
+utt>   217  common_voice_ky_18448618  344    0   140 14 
+INFO: cmn.c(133): CMN: 52.07  8.41 -3.88  9.58 -6.55  3.00 -18.62  2.74  4.99  9.77  1.83 -13.30  5.91 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448616 ignored
+utt>   218  common_voice_ky_18448616  368    0   124 17 
+INFO: cmn.c(133): CMN: 57.30 12.23  3.28  5.31 -7.43 -1.22 -23.06  3.85  6.34  0.10  8.78 -6.03  5.99 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448647 ignored
+utt>   219  common_voice_ky_18448647  387    0   188 18 
+INFO: cmn.c(133): CMN: 55.63  6.28  5.30  6.26 -2.33  5.13 -19.60  4.76  8.63  5.06  5.74 -3.00  4.29 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448648 ignored
+utt>   220  common_voice_ky_18448648  289    0   152 19 
+INFO: cmn.c(133): CMN: 57.05 11.82  2.14 12.36 -3.20 -0.42 -24.78  7.10  2.36  1.80  6.80 -6.55  5.78 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448649 ignored
+utt>   221  common_voice_ky_18448649  395    0   196 21 
+INFO: cmn.c(133): CMN: 55.98  9.35  6.38 20.03 -4.95 -7.27 -20.87  9.94 -1.40  3.69  3.36 -2.04  4.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448650 ignored
+utt>   222  common_voice_ky_18448650  459    0   220 18 
+INFO: cmn.c(133): CMN: 53.56  8.74  6.58 19.70  2.58 -4.24 -21.89  3.24 -4.52  0.39 11.82 -10.07  9.06 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448663 ignored
+utt>   223  common_voice_ky_18448663  306    0   136 17 
+INFO: cmn.c(133): CMN: 58.69  5.21  8.21 16.50 -5.78 -0.93 -19.45  7.50 -1.19  2.77  3.63 -2.64  1.70 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448651 ignored
+utt>   224  common_voice_ky_18448651  410    0   172 18 
+INFO: cmn.c(133): CMN: 55.93 11.13  1.89 21.11  0.58 -4.32 -22.28  3.63  1.58 12.95  6.06 -11.33  6.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448667 ignored
+utt>   225  common_voice_ky_18448667  455    0   184 8 
+INFO: cmn.c(133): CMN: 51.35  7.91  2.43 12.05 -3.52 -9.94 -21.44  8.00 -7.09 10.64  0.32 -6.07 10.96 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448665 ignored
+utt>   226  common_voice_ky_18448665  567    0   224 14 
+INFO: cmn.c(133): CMN: 54.47  2.81  8.91 17.70 -2.58  1.05 -26.94 12.53 -6.45  8.27  2.46 -4.48  6.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448687 ignored
+utt>   227  common_voice_ky_18448687  443    0   172 20 
+INFO: cmn.c(133): CMN: 57.86  8.61  4.91 25.67 -2.55  3.35 -29.94  6.90 -5.63  8.42  7.87 -10.46 14.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448689 ignored
+utt>   228  common_voice_ky_18448689  341    0   176 19 
+INFO: cmn.c(133): CMN: 55.50 11.08  1.85 18.42 -4.36 -7.02 -23.02  7.67 -7.14  9.90  3.73 -8.15 12.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448691 ignored
+utt>   229  common_voice_ky_18448691  347    0   172 6 
+INFO: cmn.c(133): CMN: 53.39  9.98  8.51 22.87 -4.28 -5.27 -19.38  3.92 -1.04  1.10  7.97 -9.25  3.78 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448690 ignored
+utt>   230  common_voice_ky_18448690  531    0   220 8 
+INFO: cmn.c(133): CMN: 54.57 12.12 -1.92  7.37 -8.77 -2.13 -19.36  6.70 -10.02 13.29  7.02 -7.18  8.77 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448711 ignored
+utt>   231  common_voice_ky_18448711  623    0   220 6 
+INFO: cmn.c(133): CMN: 55.34 11.61  3.11 18.56 -3.43 -9.12 -20.52  9.73 -12.63  9.47  7.48 -12.72 10.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448713 ignored
+utt>   232  common_voice_ky_18448713  482    0   232 10 
+INFO: cmn.c(133): CMN: 58.03  9.84 -1.59 14.04 -8.14 -1.99 -18.22  4.79 -0.37 18.60  1.20 -10.35 11.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448715 ignored
+utt>   233  common_voice_ky_18448715  466    0   200 18 
+INFO: cmn.c(133): CMN: 56.43  2.60  7.45 27.21  0.72 -4.59 -25.88 12.08 -14.43  1.22  2.67 -9.73 13.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448716 ignored
+utt>   234  common_voice_ky_18448716  540    0   232 1 
+INFO: cmn.c(133): CMN: 52.96  8.90  1.55 16.95 -7.58 -0.98 -19.32  6.22 -13.16 11.36  5.14 -3.57  5.56 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448725 ignored
+utt>   235  common_voice_ky_18448725  499    0   200 14 
+INFO: cmn.c(133): CMN: 52.43 13.83  5.48 16.29 -9.87 -5.55 -10.82  4.50 -6.13 14.15  2.49 -9.51  9.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448727 ignored
+utt>   236  common_voice_ky_18448727  575    0   228 8 
+INFO: cmn.c(133): CMN: 50.94  9.51  0.18 11.25 -6.62 -2.88 -16.26  5.51 -6.04  9.73  1.71 -7.36  3.97 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448730 ignored
+utt>   237  common_voice_ky_18448730  272    0   116 17 
+INFO: cmn.c(133): CMN: 55.17  7.13  2.01 17.03 -8.96 -6.56 -18.07  4.88 -4.49 13.38 -1.66  1.66 12.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448731 ignored
+utt>   238  common_voice_ky_18448731  259    0   108 12 
+INFO: cmn.c(133): CMN: 50.53  7.06  2.22 13.61 -9.38 -6.27 -19.53  6.42 -14.40 10.98 -1.60 -8.77  8.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448752 ignored
+utt>   239  common_voice_ky_18448752  502    0   156 20 
+INFO: cmn.c(133): CMN: 59.08  6.79 -0.56 10.77  4.67 -7.18 -25.32  2.54 -2.32  4.93 13.15 -15.47 10.85 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448753 ignored
+utt>   240  common_voice_ky_18448753  450    0   216 2 
+INFO: cmn.c(133): CMN: 55.23  6.02  0.53 24.37 -3.18 -2.70 -31.84  7.76 -9.67 10.96 -3.66 -9.69 12.25 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448754 ignored
+utt>   241  common_voice_ky_18448754  354    0   148 4 
+INFO: cmn.c(133): CMN: 45.67  1.05 -5.68 16.43 -5.81 -12.25 -13.45 15.41 -8.97  5.35  4.55 -2.35  8.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448774 ignored
+utt>   242  common_voice_ky_18448774  206    0    52 16 
+INFO: cmn.c(133): CMN: 53.09  8.40  5.34 12.71 -5.17 -1.57 -24.44 12.09 -2.91 13.23 -1.43 -4.50  6.93 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448756 ignored
+utt>   243  common_voice_ky_18448756  647    0   224 12 
+INFO: cmn.c(133): CMN: 59.89  8.34 -2.47 12.23  1.88 -3.98 -23.86  9.39 -4.35 12.84  4.24 -13.43 12.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448773 ignored
+utt>   244  common_voice_ky_18448773  536    0   196 18 
+INFO: cmn.c(133): CMN: 60.08 10.16 -1.85 24.99 -2.29 -6.76 -22.69 10.17 -6.57  4.11  3.49 -6.85  8.57 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448772 ignored
+utt>   245  common_voice_ky_18448772  511    0   208 7 
+INFO: cmn.c(133): CMN: 56.44  8.84  1.77 22.99 -2.09 -5.67 -21.58 12.45 -9.63  3.61  4.65 -6.85  5.78 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448776 ignored
+utt>   246  common_voice_ky_18448776  369    0   168 3 
+INFO: cmn.c(133): CMN: 62.46 10.20  0.52 18.23 -6.53 -2.82 -21.60  6.53 -7.87  8.67  8.16 -12.96 11.56 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448775 ignored
+utt>   247  common_voice_ky_18448775  435    0   184 11 
+INFO: cmn.c(133): CMN: 55.98  6.78  1.16 26.15 -0.11 -1.18 -26.01 14.43  1.12 14.12  5.92 -9.59 14.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448782 ignored
+utt>   248  common_voice_ky_18448782  359    0   180 23 
+INFO: cmn.c(133): CMN: 52.89  7.23  5.34 26.57  0.87 -10.57 -20.44  7.06 -13.33  1.73  6.03 -5.33  7.84 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448783 ignored
+utt>   249  common_voice_ky_18448783  363    0   140 4 
+INFO: cmn.c(133): CMN: 60.20  6.29 -2.16 13.85 -0.82 -5.67 -26.48 12.85  4.88 17.95  2.39 -9.84 10.49 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448785 ignored
+utt>   250  common_voice_ky_18448785  292    0   152 18 
+INFO: cmn.c(133): CMN: 57.03  7.13  2.03 11.18 -4.04 -0.02 -18.78  5.51 -7.42  6.17  8.54 -10.47  8.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448784 ignored
+utt>   251  common_voice_ky_18448784  332    0   176 5 
+INFO: cmn.c(133): CMN: 58.10  9.90 -0.22 22.59  1.35 -4.60 -25.27  4.93 -5.10  1.57  7.03 -16.59 11.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448786 ignored
+utt>   252  common_voice_ky_18448786  292    0   132 2 
+INFO: cmn.c(133): CMN: 59.43  2.91  4.52 16.95 -3.09 -1.69 -29.59 10.63  0.52  2.79  6.18 -10.63 10.59 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448797 ignored
+utt>   253  common_voice_ky_18448797  360    0   168 13 
+INFO: cmn.c(133): CMN: 57.03  7.28  2.18 15.85 -4.92 -4.48 -19.94 11.46 -3.62  2.97  8.08 -11.72 12.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448800 ignored
+utt>   254  common_voice_ky_18448800  419    0   192 17 
+INFO: cmn.c(133): CMN: 56.66 12.12  4.00  9.85 -16.68  2.28 -22.69 -0.69 -8.56 14.75  7.10 -9.57 14.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448803 ignored
+utt>   255  common_voice_ky_18448803  349    0   160 19 
+INFO: cmn.c(133): CMN: 60.18  6.99 -1.22  3.58 -11.64 -2.67 -17.13  8.07 -10.73 15.59  4.24 -7.07  6.75 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448801 ignored
+utt>   256  common_voice_ky_18448801  452    0   220 20 
+INFO: cmn.c(133): CMN: 54.86  9.36  4.75  9.97 -6.26  4.59 -23.14  1.84 -0.11  8.28  8.55 -11.12 10.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448805 ignored
+utt>   257  common_voice_ky_18448805  386    0   168 16 
+INFO: cmn.c(133): CMN: 60.06 11.68  1.34  1.79 -3.48  5.99 -21.01  9.40 -0.90 20.83  4.62 -13.03  7.42 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448808 ignored
+utt>   258  common_voice_ky_18448808  483    0   232 19 
+INFO: cmn.c(133): CMN: 58.66  6.43  1.27 15.85 -1.26 -3.95 -20.99  4.03 -6.29 15.28  1.52 -11.39  8.80 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448811 ignored
+utt>   259  common_voice_ky_18448811  530    0   220 22 
+INFO: cmn.c(133): CMN: 55.86 10.15 -0.13 13.72 -7.15 -11.56 -21.72 12.73 -4.66 13.00 -0.74 -1.23  5.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448813 ignored
+utt>   260  common_voice_ky_18448813  255    0    96 10 
+INFO: cmn.c(133): CMN: 54.45 12.38  2.98 12.99 -11.37  0.03 -20.16  6.64 -15.21 12.77  6.85 -12.37  9.04 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448818 ignored
+utt>   261  common_voice_ky_18448818  443    0   212 17 
+INFO: cmn.c(133): CMN: 47.58  1.31 -2.91 15.66 -1.90 -3.93 -18.98  8.41 -12.93 18.78 -2.39 -7.81  5.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448820 ignored
+utt>   262  common_voice_ky_18448820  275    0   104 21 
+INFO: cmn.c(133): CMN: 53.49  9.73  6.36  9.23 -12.40 -1.54 -16.27  9.07 -9.29 16.12 -8.97 -2.49  4.95 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448821 ignored
+utt>   263  common_voice_ky_18448821  328    0   144 18 
+INFO: cmn.c(133): CMN: 58.60  7.74  4.25 12.11 -9.00 -8.63 -22.14  5.96 -7.53 12.16 -3.67 -4.87  5.17 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448854 ignored
+utt>   264  common_voice_ky_18448854  480    0   200 18 
+INFO: cmn.c(133): CMN: 57.74  8.29 -1.32 15.75 -7.33 -10.78 -21.21 13.70 -8.27 13.10 -2.15 -3.99  6.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448819 ignored
+utt>   265  common_voice_ky_18448819  628    0   232 8 
+INFO: cmn.c(133): CMN: 55.11  6.86  2.27 23.60 -8.35 -2.98 -14.42  1.89 -13.08 -1.26  1.85  1.13  7.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448907 ignored
+utt>   266  common_voice_ky_18448907  546    0   188 5 
+INFO: cmn.c(133): CMN: 58.67  7.56 -0.18  1.54 -5.89 -9.90 -18.90 11.11 -4.39 17.49 -5.67 -11.55  8.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448855 ignored
+utt>   267  common_voice_ky_18448855  379    0   188 6 
+INFO: cmn.c(133): CMN: 56.49  2.86  3.13 18.35 -8.84 12.30 -14.15  0.50 -6.79  0.46  1.03  1.70  6.49 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448908 ignored
+utt>   268  common_voice_ky_18448908  396    0   180 5 
+INFO: cmn.c(133): CMN: 55.86  8.46  3.64 12.97 -4.90 -4.15 -19.94  5.06 -11.89 14.50 -1.37 -4.84  8.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448858 ignored
+utt>   269  common_voice_ky_18448858  612    0   224 15 
+INFO: cmn.c(133): CMN: 54.85  7.52  0.22 13.01 -9.81  3.57 -11.53  0.86 -3.05 -3.35  3.04  0.24  6.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448910 ignored
+utt>   270  common_voice_ky_18448910  465    0   200 17 
+INFO: cmn.c(133): CMN: 54.55  0.11  0.00  6.85 -8.01  9.38 -14.58 -8.53 -8.52  4.96  3.33  0.68  5.91 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448936 ignored
+utt>   271  common_voice_ky_18448936  433    0   160 8 
+INFO: cmn.c(133): CMN: 56.36  8.33 -0.42 19.53 -12.52 11.05 -17.99  1.59 -8.99 -2.48  4.17 -1.51  9.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448932 ignored
+utt>   272  common_voice_ky_18448932  417    0   204 18 
+INFO: cmn.c(133): CMN: 55.42  7.94  2.68 18.56 -8.30 10.34 -12.76 -3.12 -4.56 -4.56  5.40 -1.02  7.68 
+utt>   273  common_voice_ky_18448911  564    0   200 12  1 3 3.683136e-12 -1.505701e+02 -8.492153e+04
+INFO: cmn.c(133): CMN: 60.30 14.42 -1.42 12.86 -7.24 12.30 -18.46 -1.37 -14.19 -1.52  7.25 -3.29  7.96 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448948 ignored
+utt>   274  common_voice_ky_18448948  322    0   164 9 
+INFO: cmn.c(133): CMN: 53.26  6.96  1.27 13.52 -7.82  7.06 -13.74  1.74 -12.43 -2.40  3.73 -1.15  6.89 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448949 ignored
+utt>   275  common_voice_ky_18448949  493    0   176 21 
+INFO: cmn.c(133): CMN: 55.88  8.53 -0.76  3.69 -11.59 14.49 -13.85 -3.74 -9.76  3.51  4.11 -1.33  3.68 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448958 ignored
+utt>   276  common_voice_ky_18448958  429    0   180 10 
+INFO: cmn.c(133): CMN: 51.44  7.35  8.45  3.93 -19.87  8.92 -9.98  0.92 -12.00  7.68 -0.92  4.16  3.48 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448950 ignored
+utt>   277  common_voice_ky_18448950  467    0   180 10 
+INFO: cmn.c(133): CMN: 57.02  3.39  2.92  8.74 -7.17  7.02 -12.75 -2.01 -10.59  3.47  4.93  0.47  6.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448960 ignored
+utt>   278  common_voice_ky_18448960  256    0   112 14 
+INFO: cmn.c(133): CMN: 54.98  6.90  5.20  3.13 -16.82 14.52 -10.37 -3.38 -14.47  6.79  3.82  4.27  1.68 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448959 ignored
+utt>   279  common_voice_ky_18448959  343    0   164 14 
+INFO: cmn.c(133): CMN: 58.88  6.54  5.56  5.45 -13.34 13.74 -12.71 -3.26 -10.43  3.66  6.51 -0.75  7.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448961 ignored
+utt>   280  common_voice_ky_18448961  356    0   148 15 
+INFO: cmn.c(133): CMN: 59.06  8.28  4.27 11.21 -14.09 14.28 -11.53 -3.07 -13.94  5.59  1.90  1.37  5.51 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448973 ignored
+utt>   281  common_voice_ky_18448973  506    0   232 17 
+INFO: cmn.c(133): CMN: 59.33 10.11  1.25  8.24 -17.17 15.31 -14.09 -1.67 -5.47  7.69  4.43  2.97  8.84 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448972 ignored
+utt>   282  common_voice_ky_18448972  487    0   208 22 
+INFO: cmn.c(133): CMN: 61.27  8.32  3.13  7.16 -7.59 12.05 -13.10 -5.73 -11.92  8.18 -1.25  3.55 11.83 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448975 ignored
+utt>   283  common_voice_ky_18448975  448    0   200 10 
+INFO: cmn.c(133): CMN: 51.40  6.57  9.06 -0.21 -15.86 13.76 -6.88 -3.75 -6.32  9.37 -4.07  7.87  2.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448974 ignored
+utt>   284  common_voice_ky_18448974  346    0   140 14 
+INFO: cmn.c(133): CMN: 60.22  6.36  3.10 17.87 -9.46 14.23 -10.44 -3.12 -11.17 -3.80  0.38  3.53  6.39 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448992 ignored
+utt>   285  common_voice_ky_18448992  462    0   220 12 
+INFO: cmn.c(133): CMN: 51.74  2.90 -2.31  6.95 -16.30  4.54 -12.29  2.59 -11.75  7.23  2.06  4.90  1.36 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448998 ignored
+utt>   286  common_voice_ky_18448998  343    0   108 18 
+INFO: cmn.c(133): CMN: 55.07 10.68 -0.81  6.71 -15.05  9.28 -7.76 -4.50 -2.59 -0.24  2.19  0.79  6.12 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448993 ignored
+utt>   287  common_voice_ky_18448993  510    0   184 12 
+INFO: cmn.c(133): CMN: 56.95  8.51  2.88 16.77 -5.66  4.08 -14.54  0.15 -6.79  1.21  5.01  4.29  7.29 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18448994 ignored
+utt>   288  common_voice_ky_18448994  464    0   196 20 
+INFO: cmn.c(133): CMN: 57.48  5.23  0.50 15.90 -10.27 11.34 -15.68 -3.05 -6.60 -0.06  4.06  4.94  8.77 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449012 ignored
+utt>   289  common_voice_ky_18449012  465    0   192 16 
+INFO: cmn.c(133): CMN: 57.63 11.58  1.26  4.78 -10.57 23.46 -9.91 -5.19 -10.74  8.05  5.28 -3.63  9.16 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449016 ignored
+utt>   290  common_voice_ky_18449016  334    0   124 10 
+INFO: cmn.c(133): CMN: 53.56  1.59  0.81 15.57 -4.65  5.68 -13.49  1.35 -5.30  3.90  1.66  0.25  3.75 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449014 ignored
+utt>   291  common_voice_ky_18449014  357    0   140 14 
+INFO: cmn.c(133): CMN: 53.06  5.48  2.29 13.88 -7.69  9.45 -12.17 -3.77  0.22 -0.60  4.46 -1.13 10.11 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449013 ignored
+utt>   292  common_voice_ky_18449013  591    0   216 18 
+INFO: cmn.c(133): CMN: 52.22 10.16  2.14  8.68 -15.23 10.43 -13.91  5.20 -9.05 -1.74  2.49 -3.40  3.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449042 ignored
+utt>   293  common_voice_ky_18449042  259    0    80 7 
+INFO: cmn.c(133): CMN: 58.17  4.41  6.56 22.56 -4.94  4.45 -19.87  4.28 -14.77 -0.89  4.20  2.08  8.41 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449044 ignored
+utt>   294  common_voice_ky_18449044  464    0   220 19 
+INFO: cmn.c(133): CMN: 58.00  5.37  2.70  5.76 -13.27 12.06 -16.40 -1.20 -7.63  3.02  2.27  2.92  6.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449043 ignored
+utt>   295  common_voice_ky_18449043  489    0   212 6 
+INFO: cmn.c(133): CMN: 57.83  5.85  3.87  6.55 -10.84 10.10 -15.02  3.95 -9.31  8.14  0.70  1.88  6.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449045 ignored
+utt>   296  common_voice_ky_18449045  507    0   236 18 
+INFO: cmn.c(133): CMN: 53.38  9.50  7.02  7.08 -7.68  6.86 -14.35 -3.45 -7.47  0.81  1.83  6.76  0.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449046 ignored
+utt>   297  common_voice_ky_18449046  435    0   188 8 
+INFO: cmn.c(133): CMN: 56.58  6.95 -0.31 10.66 -3.40  7.77 -12.48  1.38 -4.30  8.47  8.20  0.69  8.01 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449061 ignored
+utt>   298  common_voice_ky_18449061  348    0   148 15 
+INFO: cmn.c(133): CMN: 55.26  8.26  4.70  6.25 -14.66  9.21 -13.30 -1.22 -10.69 10.60  3.35 -1.74  5.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449065 ignored
+utt>   299  common_voice_ky_18449065  531    0   224 4 
+INFO: cmn.c(133): CMN: 59.22 11.44  0.70  8.26 -8.33  8.22 -12.61  3.59 -8.85 12.05  1.85  0.67  8.25 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449082 ignored
+utt>   300  common_voice_ky_18449082  228    0   128 15 
+INFO: cmn.c(133): CMN: 58.40 12.71  2.52  4.27 -18.73 10.14 -12.06 -7.89 -9.46  5.65  1.00  1.27 10.29 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449066 ignored
+utt>   301  common_voice_ky_18449066  452    0   188 3 
+INFO: cmn.c(133): CMN: 54.84  8.63  6.26  9.22 -15.10 11.38 -15.33  0.05 -14.59  1.73 -0.59  0.37  3.47 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449083 ignored
+utt>   302  common_voice_ky_18449083  505    0   192 5 
+INFO: cmn.c(133): CMN: 59.31  6.70  3.92 15.67 -8.54  8.03 -20.51  6.00 -12.38  3.70  3.39  3.30  8.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449084 ignored
+utt>   303  common_voice_ky_18449084  465    0   188 7 
+INFO: cmn.c(133): CMN: 53.02  1.18  0.45 14.99 -6.56  8.29 -6.02  1.13 -5.82  1.91  0.23 -0.08  3.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449086 ignored
+utt>   304  common_voice_ky_18449086  262    0    80 10 
+INFO: cmn.c(133): CMN: 55.00 11.54  5.46  3.78 -16.53 10.58 -8.05 -1.16 -12.11 -2.82 -0.78  5.23  4.79 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449085 ignored
+utt>   305  common_voice_ky_18449085  318    0    96 7 
+INFO: cmn.c(133): CMN: 53.57  9.22  6.26  5.76 -14.05  7.05 -12.89  7.07 -6.27 10.27  2.63  5.45 -2.06 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449130 ignored
+utt>   306  common_voice_ky_18449130  437    0   184 18 
+INFO: cmn.c(133): CMN: 53.16  9.78  8.98  7.64 -6.45  6.47 -2.39  2.78 -12.77  7.95  1.46  5.54 -0.29 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449158 ignored
+utt>   307  common_voice_ky_18449158  256    0   100 19 
+INFO: cmn.c(133): CMN: 59.04  6.43  5.67 11.97 -9.65  7.08 -12.45  1.26  0.51  4.15  6.71  3.44  6.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449136 ignored
+utt>   308  common_voice_ky_18449136  505    0   208 8 
+INFO: cmn.c(133): CMN: 54.41  9.10  6.35  9.96 -6.54  4.27 -12.30 -4.15 -9.67  4.99 -2.30  4.00  4.16 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449159 ignored
+utt>   309  common_voice_ky_18449159  523    0   224 10 
+INFO: cmn.c(133): CMN: 55.70  6.72  0.71  4.76 -5.80 12.32 -12.10  1.87 -8.60 10.31  6.57  2.45  8.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449160 ignored
+utt>   310  common_voice_ky_18449160  357    0   132 12 
+INFO: cmn.c(133): CMN: 56.23 11.66  0.11 13.10 -6.20  5.27 -10.44 -3.21 -11.36  6.73  4.84  0.90  5.36 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449174 ignored
+utt>   311  common_voice_ky_18449174  392    0   196 22 
+INFO: cmn.c(133): CMN: 57.87  7.90  4.88  4.92 -13.98  9.99 -6.21 -3.78 -7.12 10.23 -1.86  7.20  3.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449162 ignored
+utt>   312  common_voice_ky_18449162  508    0   208 20 
+INFO: cmn.c(133): CMN: 56.63  6.96 -2.02  7.25 -10.92 10.68 -11.04  0.68 -5.22  2.69  4.67  1.45  3.42 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449177 ignored
+utt>   313  common_voice_ky_18449177  568    0   220 23 
+INFO: cmn.c(133): CMN: 57.82  5.78 -2.26 15.24 -6.00 10.29 -14.43 -4.56 -4.21  4.16  8.11  1.61  3.57 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449178 ignored
+utt>   314  common_voice_ky_18449178  367    0   200 20 
+INFO: cmn.c(133): CMN: 52.75  0.67  5.03  9.96 -4.56 11.01 -11.36  4.78 -10.11  4.86  0.08  3.25  2.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449199 ignored
+utt>   315  common_voice_ky_18449199  341    0   144 16 
+INFO: cmn.c(133): CMN: 57.12  6.09  1.65 12.02 -4.09  5.48 -10.45 -0.93 -2.97  3.82  9.50 -0.25  8.92 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449201 ignored
+utt>   316  common_voice_ky_18449201  455    0   216 3 
+INFO: cmn.c(133): CMN: 56.89 14.68 -2.72 -4.20 -15.87 14.60 -4.52 -3.78 -12.91 12.33  3.86  7.35  1.07 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449206 ignored
+utt>   317  common_voice_ky_18449206  295    0   108 13 
+INFO: cmn.c(133): CMN: 57.87  1.71  0.37  8.24 -8.70  7.82 -9.02 -4.79 -6.05  5.56  3.86  5.75  2.89 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449202 ignored
+utt>   318  common_voice_ky_18449202  448    0   200 10 
+INFO: cmn.c(133): CMN: 54.96 12.78  1.71  4.18 -17.46  8.79 -9.54  3.44 -9.92  9.52  5.71  6.30  1.01 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449212 ignored
+utt>   319  common_voice_ky_18449212  295    0    76 12 
+INFO: cmn.c(133): CMN: 54.29  2.04 -0.68  8.75 -11.40 10.11 -17.14  2.28 -3.61 14.65  0.38  6.61  3.69 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449218 ignored
+utt>   320  common_voice_ky_18449218  213    0    92 21 
+INFO: cmn.c(133): CMN: 58.53  7.10  1.97 11.44 -11.11 11.00 -15.05 -0.37 -3.56  4.19  5.78  1.19  7.76 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449217 ignored
+utt>   321  common_voice_ky_18449217  422    0   204 6 
+INFO: cmn.c(133): CMN: 50.44  6.46  4.80  5.36 -10.30  5.33 -11.01  8.28 -12.16  8.15 -3.02  1.60 -4.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449229 ignored
+utt>   322  common_voice_ky_18449229  264    0    84 16 
+INFO: cmn.c(133): CMN: 56.61  7.19  0.18  2.12 -12.49 23.30 -6.80 -6.48 -14.97 11.49  2.89  8.28  2.69 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449231 ignored
+utt>   323  common_voice_ky_18449231  273    0   116 15 
+INFO: cmn.c(133): CMN: 53.70 11.83  3.30 -3.35 -18.34 18.18 -8.35 -2.22 -7.51  9.17 -4.96  6.33 -0.01 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449230 ignored
+utt>   324  common_voice_ky_18449230  496    0   196 1 
+INFO: cmn.c(133): CMN: 55.99  8.07 -4.32 14.72 -4.71 10.94 -16.91  1.77 -11.98 11.57  0.55 -1.55  7.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449242 ignored
+utt>   325  common_voice_ky_18449242  434    0   204 17 
+INFO: cmn.c(133): CMN: 52.91  5.98 -4.71  8.27 -7.23  8.08 -15.66 -2.24 -5.96  7.92 -2.14  1.50  4.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449243 ignored
+utt>   326  common_voice_ky_18449243  459    0   164 15 
+INFO: cmn.c(133): CMN: 56.99  5.92 -1.47 13.92 -9.92  5.55 -17.99 -2.82 -5.38 -0.87  6.79  1.70  2.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449299 ignored
+utt>   327  common_voice_ky_18449299  390    0   168 2 
+INFO: cmn.c(133): CMN: 52.44 -0.32  2.06 11.53 -6.12 10.15 -9.68  0.89 -3.94  5.60  8.79  0.56  1.97 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449303 ignored
+utt>   328  common_voice_ky_18449303  248    0   108 16 
+INFO: cmn.c(133): CMN: 53.06  4.98  3.87 14.95 -9.52  6.68 -22.07  1.83 -8.83 -1.63  7.76  2.13  5.11 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449301 ignored
+utt>   329  common_voice_ky_18449301  540    0   220 7 
+INFO: cmn.c(133): CMN: 55.99 10.41  6.07 17.73 -4.68  6.65 -21.43 -0.40 -9.30 -5.59 12.49  1.28  5.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449302 ignored
+utt>   330  common_voice_ky_18449302  447    0   228 12 
+INFO: cmn.c(133): CMN: 58.12  9.80  2.56  2.74 -12.92 14.42  0.26 -15.61  0.51  4.36  7.93  4.92  3.61 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449309 ignored
+utt>   331  common_voice_ky_18449309  402    0   164 21 
+INFO: cmn.c(133): CMN: 51.03 -2.88  7.99 20.52 -7.59  6.46 -7.59 -3.62 -11.52  4.24 -2.42  3.78  4.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449311 ignored
+utt>   332  common_voice_ky_18449311  283    0   112 17 
+INFO: cmn.c(133): CMN: 50.84 10.88 -2.70  1.36 -12.96 14.97 -6.19 -15.63 -8.08  6.31  9.35 -0.57  5.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449310 ignored
+utt>   333  common_voice_ky_18449310  426    0   136 5 
+INFO: cmn.c(133): CMN: 55.52  6.09  5.55 12.23 -15.20  9.44 -7.74 -7.05 -9.61  6.22  3.77  3.95  3.86 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449312 ignored
+utt>   334  common_voice_ky_18449312  508    0   228 19 
+INFO: cmn.c(133): CMN: 56.13 15.84 -1.39 13.35 -5.49 11.56 -9.81 -10.64 -16.84  0.37 14.44 -4.95 -3.89 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449313 ignored
+utt>   335  common_voice_ky_18449313  282    0   104 14 
+INFO: cmn.c(133): CMN: 56.02  6.65 -0.28  4.13 -9.75 14.72 -7.72 -8.42 -5.28  9.78 -0.98  3.83  5.40 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449319 ignored
+utt>   336  common_voice_ky_18449319  397    0   152 8 
+INFO: cmn.c(133): CMN: 58.73  9.08  4.09 13.04 -11.84  5.43 -16.66 -3.09 -16.48  8.66  6.99  2.36  9.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449322 ignored
+utt>   337  common_voice_ky_18449322  405    0   176 15 
+INFO: cmn.c(133): CMN: 53.22  5.67  2.70  1.78 -10.17 14.03 -9.47 -10.35  1.07  1.99  7.97  1.87  6.43 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449329 ignored
+utt>   338  common_voice_ky_18449329  404    0   152 18 
+INFO: cmn.c(133): CMN: 54.18  6.99  3.53  8.89 -13.29 13.60 -9.91 -6.90 -13.88  2.04  1.77  6.33  4.17 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449330 ignored
+utt>   339  common_voice_ky_18449330  562    0   228 17 
+INFO: cmn.c(133): CMN: 57.51 15.11 -2.28  3.29 -24.37 17.26 -11.32 -3.48 -14.63  7.85 10.45  1.84  4.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449331 ignored
+utt>   340  common_voice_ky_18449331  390    0   164 7 
+INFO: cmn.c(133): CMN: 57.73  3.96 -0.47  3.33 -11.69 10.39 -16.20  0.31 -9.37 16.63 -1.56  1.99  6.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449334 ignored
+utt>   341  common_voice_ky_18449334  269    0    96 13 
+INFO: cmn.c(133): CMN: 50.94  1.01 -0.50 14.26 -2.89  5.95 -13.61 -1.11 -15.38  1.48  2.65  1.57  7.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449332 ignored
+utt>   342  common_voice_ky_18449332  444    0   148 8 
+INFO: cmn.c(133): CMN: 55.86  4.29 -2.42 16.99 -7.33 11.47 -18.78  5.04 -16.49 11.76  1.25  1.26  9.92 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449335 ignored
+utt>   343  common_voice_ky_18449335  338    0   168 8 
+INFO: cmn.c(133): CMN: 56.31 10.33 -1.62 18.15 -11.10  6.96 -10.14 -1.17 -10.10  8.59  4.39  2.29  9.49 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449336 ignored
+utt>   344  common_voice_ky_18449336  483    0   212 18 
+INFO: cmn.c(133): CMN: 55.95  4.42 -0.33  5.27 -13.70  6.15 -19.30  1.37 -13.30  8.80  7.04 -3.22 12.07 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449344 ignored
+utt>   345  common_voice_ky_18449344  466    0   148 4 
+INFO: cmn.c(133): CMN: 55.29  1.10  2.80 19.25 -16.87  9.84 -12.31  4.18 -13.74  6.82  4.45  1.32  5.59 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449338 ignored
+utt>   346  common_voice_ky_18449338  302    0   108 12 
+INFO: cmn.c(133): CMN: 60.28  1.82  3.45 20.89 -5.84  7.13 -15.03 -3.64 -11.82  0.58  4.00  0.82 13.05 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449345 ignored
+utt>   347  common_voice_ky_18449345  365    0   148 16 
+INFO: cmn.c(133): CMN: 59.35 14.25 -0.35  3.69 -12.10 14.91 -12.76 -11.16 -15.52  9.80  6.65 -0.41  8.63 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449346 ignored
+utt>   348  common_voice_ky_18449346  411    0   196 16 
+INFO: cmn.c(133): CMN: 54.70  4.16  3.50  0.92 -15.73 12.59 -12.21 -4.58 -17.39 11.61  6.18 -4.38 11.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449347 ignored
+utt>   349  common_voice_ky_18449347  527    0   220 3 
+INFO: cmn.c(133): CMN: 54.03  6.42 -1.85 11.12 -4.26 11.08 -15.75 -5.82 -13.24  2.25  6.77 -1.75  6.95 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449349 ignored
+utt>   350  common_voice_ky_18449349  568    0   204 7 
+INFO: cmn.c(133): CMN: 61.40  6.10  4.89 16.65 -13.62  9.28 -18.42  3.84 -15.66  4.58  3.57  0.25 11.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449359 ignored
+utt>   351  common_voice_ky_18449359  480    0   212 18 
+INFO: cmn.c(133): CMN: 57.35  4.38  1.99 12.55 -7.28 12.36 -13.59  0.05 -11.94 10.23 11.61  2.20  7.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449361 ignored
+utt>   352  common_voice_ky_18449361  371    0   200 17 
+INFO: cmn.c(133): CMN: 57.12 15.02 -1.58 15.04 -9.65  4.08 -14.00 -2.05 -14.62  0.97 10.11 -2.77  9.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449360 ignored
+utt>   353  common_voice_ky_18449360  524    0   228 21 
+INFO: cmn.c(133): CMN: 56.64  6.47  3.84  6.97 -13.15  6.59 -13.84  2.54 -17.12  9.44  4.18  3.41  4.82 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449362 ignored
+utt>   354  common_voice_ky_18449362  392    0   216 7 
+INFO: cmn.c(133): CMN: 54.46  8.41 -1.11  2.52 -7.25  6.69 -11.49 -4.19 -14.41  7.50  9.95 -1.24  4.64 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449363 ignored
+utt>   355  common_voice_ky_18449363  548    0   220 18 
+INFO: cmn.c(133): CMN: 54.33 10.41  3.22  6.51 -18.66 17.41 -18.63  1.74 -12.84 10.67  4.73  5.04  4.11 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449368 ignored
+utt>   356  common_voice_ky_18449368  383    0   172 18 
+INFO: cmn.c(133): CMN: 58.33 10.89  5.65  5.47 -12.59 10.21 -16.07 -7.97 -9.54  8.10  6.41  1.55  6.18 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449367 ignored
+utt>   357  common_voice_ky_18449367  433    0   212 14 
+INFO: cmn.c(133): CMN: 59.42  8.83 -2.10 14.22 -5.32  8.21 -18.24  2.43 -7.17  8.94  9.51  1.38 10.39 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449376 ignored
+utt>   358  common_voice_ky_18449376  467    0   224 1 
+INFO: cmn.c(133): CMN: 56.66  6.57  0.82  9.41 -10.74 12.48 -18.86 -4.60 -17.20  9.01  3.35  3.06  5.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449377 ignored
+utt>   359  common_voice_ky_18449377  462    0   204 23 
+INFO: cmn.c(133): CMN: 57.61  9.17  1.96  5.68 -17.09  2.88 -8.62  6.94 -10.40  7.92  5.80  2.73  7.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449378 ignored
+utt>   360  common_voice_ky_18449378  297    0   132 7 
+INFO: cmn.c(133): CMN: 49.21 -3.51  6.72 18.12 -2.57  4.64 -18.37  7.20 -16.35  3.12  0.09  1.25  5.49 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449386 ignored
+utt>   361  common_voice_ky_18449386  248    0   120 18 
+INFO: cmn.c(133): CMN: 55.59 11.27  2.28 13.69 -8.98 18.50 -17.75  0.05 -14.55  6.47  7.65 -3.63  7.13 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449385 ignored
+utt>   362  common_voice_ky_18449385  503    0   196 5 
+INFO: cmn.c(133): CMN: 54.18 10.51 -3.03  3.68 -15.99 14.04 -14.41 -6.26 -15.31 10.12  8.07 -1.06 10.44 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449384 ignored
+utt>   363  common_voice_ky_18449384  586    0   188 20 
+INFO: cmn.c(133): CMN: 56.94  8.13  4.92  6.63 -9.75 16.99 -19.23 -1.85 -16.33 10.59  2.50  4.11  3.77 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449387 ignored
+utt>   364  common_voice_ky_18449387  347    0   216 12 
+INFO: cmn.c(133): CMN: 57.21 10.63  1.83  5.77 -13.62 12.71 -15.84 -2.88 -17.79  6.09  8.71 -1.92  6.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449411 ignored
+utt>   365  common_voice_ky_18449411  364    0   160 2 
+INFO: cmn.c(133): CMN: 59.46  8.84  3.96 12.03 -12.74 14.68 -14.24 -5.49 -14.81  3.53  7.90  2.66 10.80 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449410 ignored
+utt>   366  common_voice_ky_18449410  439    0   204 12 
+INFO: cmn.c(133): CMN: 57.14  8.87 -0.71 10.18 -8.59 10.42 -24.20 -2.58 -18.71  2.69  8.94 -3.73  8.63 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449388 ignored
+utt>   367  common_voice_ky_18449388  470    0   212 6 
+INFO: cmn.c(133): CMN: 55.96  6.27  3.87  3.13 -17.45 17.34 -16.98 -3.71 -12.19  7.84  2.91  3.51  3.66 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449412 ignored
+utt>   368  common_voice_ky_18449412  395    0   180 16 
+INFO: cmn.c(133): CMN: 50.83  6.62  1.93 -0.03 -9.73 17.90 -14.77 -3.12 -6.56  7.32  3.85  3.09  0.83 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449434 ignored
+utt>   369  common_voice_ky_18449434  248    0   100 13 
+INFO: cmn.c(133): CMN: 54.93  8.31 -0.21 15.91 -0.73 13.96 -26.80 -0.05 -8.13  1.54  5.09  1.38  8.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449431 ignored
+utt>   370  common_voice_ky_18449431  248    0    92 11 
+INFO: cmn.c(133): CMN: 56.31  0.96  4.00 19.79 -9.12  7.42 -16.31 -2.17 -5.91 -2.43  2.45  2.83  8.31 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449430 ignored
+utt>   371  common_voice_ky_18449430  405    0   188 18 
+INFO: cmn.c(133): CMN: 55.61 10.22  1.14 10.20 -7.10 11.32 -13.94 -7.15 -7.42  3.48  7.88 -1.99  7.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449432 ignored
+utt>   372  common_voice_ky_18449432  524    0   220 20 
+INFO: cmn.c(133): CMN: 60.78 17.48 -9.86  4.68 -15.66  9.54 -21.62 -0.83 -0.63  8.11 13.99  0.45  4.67 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449446 ignored
+utt>   373  common_voice_ky_18449446  311    0   140 8 
+INFO: cmn.c(133): CMN: 62.79  7.85 -1.66 14.34 -11.37 10.63 -16.70 -4.79 -3.19  8.42  6.64  1.61 11.93 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449448 ignored
+utt>   374  common_voice_ky_18449448  425    0   196 20 
+INFO: cmn.c(133): CMN: 61.23  9.09 -4.34  9.75 -8.50  3.37 -22.54  0.74 -12.95  8.48  3.70  2.82  6.72 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449449 ignored
+utt>   375  common_voice_ky_18449449  302    0   148 19 
+INFO: cmn.c(133): CMN: 54.31  1.72  3.77 16.67 -11.87  7.75 -22.21  1.13 -8.03  1.22  5.79 -0.14  8.09 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449447 ignored
+utt>   376  common_voice_ky_18449447  529    0   192 14 
+INFO: cmn.c(133): CMN: 56.24  3.94  4.09 17.16  0.88  2.61 -21.16  2.65 -15.48  0.65  7.44  1.42  8.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449460 ignored
+utt>   377  common_voice_ky_18449460  403    0   216 1 
+INFO: cmn.c(133): CMN: 51.52  1.51  4.57 14.02 -5.44  5.23 -19.72  8.75 -9.12  2.89  3.18  5.19  3.86 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449462 ignored
+utt>   378  common_voice_ky_18449462  336    0   120 3 
+INFO: cmn.c(133): CMN: 59.70  8.70 -0.11  6.53 -13.69 10.61 -24.03  0.01 -11.48 12.42  6.99  4.20  6.70 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449461 ignored
+utt>   379  common_voice_ky_18449461  378    0   188 19 
+INFO: cmn.c(133): CMN: 59.11  8.57  2.75 16.13 -2.73  7.52 -23.35  0.05 -12.87  2.10  7.90 -1.01 11.98 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449463 ignored
+utt>   380  common_voice_ky_18449463  354    0   152 7 
+INFO: cmn.c(133): CMN: 58.52  3.74  4.72 21.08 -7.25  8.85 -20.59  7.12 -8.63  6.61  0.23  4.71  7.85 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449480 ignored
+utt>   381  common_voice_ky_18449480  254    0   112 11 
+INFO: cmn.c(133): CMN: 54.81  8.20  4.26 14.61 -10.62  4.11 -17.82 -4.94 -12.58  0.08  9.00  2.08  8.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449464 ignored
+utt>   382  common_voice_ky_18449464  568    0   228 18 
+INFO: cmn.c(133): CMN: 52.81  3.08  8.19  4.82 -19.67 14.63 -16.49  1.76 -13.26  5.03  0.51  7.89  3.58 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449481 ignored
+utt>   383  common_voice_ky_18449481  491    0   184 4 
+INFO: cmn.c(133): CMN: 55.26 -4.32  8.29 10.31 -7.46  8.68 -10.30  2.83 -12.39 -1.17 -9.04 -4.48  2.67 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449482 ignored
+utt>   384  common_voice_ky_18449482  346    0   144 18 
+INFO: cmn.c(133): CMN: 56.36 13.43  6.80 -0.28 -4.10 15.72 -14.48  6.50 -12.23 -4.18 -5.74 -4.04 -2.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449483 ignored
+utt>   385  common_voice_ky_18449483  493    0   228 23 
+INFO: cmn.c(133): CMN: 57.16  8.01 10.27  7.37 -6.70 14.67 -14.14 11.68 -18.15 -1.44 -4.70  4.06 -4.22 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449499 ignored
+utt>   386  common_voice_ky_18449499  283    0   116 13 
+INFO: cmn.c(133): CMN: 57.64 12.87 11.24  5.03 -2.43 21.67 -18.17  2.17 -9.19 -5.08 -9.41  0.98 -0.40 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449495 ignored
+utt>   387  common_voice_ky_18449495  496    0   228 15 
+INFO: cmn.c(133): CMN: 55.15  7.94 13.36  0.80 -2.44 16.89 -16.11 10.83 -14.69 -7.80 -11.00  1.15 -3.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449484 ignored
+utt>   388  common_voice_ky_18449484  565    0   212 8 
+INFO: cmn.c(133): CMN: 54.31 11.41 10.37  2.23 -9.22 23.68 -16.42  5.59 -10.93 -0.27 -5.13  7.15 -1.79 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449500 ignored
+utt>   389  common_voice_ky_18449500  324    0   176 22 
+INFO: cmn.c(133): CMN: 58.33 13.48  2.70 -13.13 -6.01 15.72 -8.17  2.63 -11.94 -3.16 -4.50  2.67 -3.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449501 ignored
+utt>   390  common_voice_ky_18449501  260    0   132 6 
+INFO: cmn.c(133): CMN: 56.69 12.32  1.56 -12.45 -11.47 15.80 -7.07  1.20 -8.48  4.32 -2.13  0.32  0.06 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449502 ignored
+utt>   391  common_voice_ky_18449502  204    0    80 15 
+INFO: cmn.c(133): CMN: 55.36  2.39  7.18 -0.49 -6.77 13.83 -13.34  4.10 -10.02 -5.10 -8.12  6.03 -0.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449503 ignored
+utt>   392  common_voice_ky_18449503  446    0   164 19 
+INFO: cmn.c(133): CMN: 54.57 10.15 11.76 -7.60 -9.34 20.86 -6.58  2.84 -12.06 -2.88 -10.24  3.40 -2.94 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449504 ignored
+utt>   393  common_voice_ky_18449504  422    0   168 6 
+INFO: cmn.c(133): CMN: 57.58 14.19 10.09 -2.19 -11.15 21.23 -10.89  4.97 -10.68 -0.50 -5.65  3.92 -0.98 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449505 ignored
+utt>   394  common_voice_ky_18449505  338    0   164 20 
+INFO: cmn.c(133): CMN: 54.86 13.07  6.80 -1.43 -4.12 19.78 -18.32  1.90 -13.67 -4.18 -10.41 -2.19 -1.63 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449506 ignored
+utt>   395  common_voice_ky_18449506  418    0   148 22 
+INFO: cmn.c(133): CMN: 52.94  3.82  7.50  5.36  3.05  9.54 -16.95  5.26 -11.67 -8.91 -11.74  2.69 -4.70 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449510 ignored
+utt>   396  common_voice_ky_18449510  234    0    76 6 
+INFO: cmn.c(133): CMN: 50.37  9.78 20.03  1.33 -8.48 19.63 -7.08 12.65 -17.31 -4.93 -14.29  3.71 -6.45 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449512 ignored
+utt>   397  common_voice_ky_18449512  248    0    88 14 
+INFO: cmn.c(133): CMN: 59.53  5.51 11.07 -0.39 -3.06 14.26 -6.38  9.27 -16.18 -6.21 -8.61 -0.11 -5.55 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449513 ignored
+utt>   398  common_voice_ky_18449513  402    0   228 10 
+INFO: cmn.c(133): CMN: 58.52  3.64  9.93 -1.76 -2.67 16.07 -7.77 11.08 -15.51 -7.83 -6.31  2.98 -3.02 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449515 ignored
+utt>   399  common_voice_ky_18449515  299    0   144 18 
+INFO: cmn.c(133): CMN: 51.68  4.75  7.47  6.34 -5.42  4.42 -8.85  2.98 -16.95 -9.11 -7.39  0.07 -3.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449523 ignored
+utt>   400  common_voice_ky_18449523  253    0    88 15 
+INFO: cmn.c(133): CMN: 54.58  6.31  8.24 -3.19 -10.28 14.26 -6.97  4.33 -11.87 -5.64 -3.48  3.54 -0.12 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449516 ignored
+utt>   401  common_voice_ky_18449516  438    0   172 15 
+INFO: cmn.c(133): CMN: 53.73  9.39  6.87 -5.29 -7.23 14.57 -10.04  5.66 -7.78 -3.32 -9.07  3.51 -1.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449517 ignored
+utt>   402  common_voice_ky_18449517  410    0   176 8 
+INFO: cmn.c(133): CMN: 59.59  9.81  7.95 -0.76 -7.08 13.87 -14.60  8.24 -15.81 -5.88 -6.69  1.72 -0.10 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449521 ignored
+utt>   403  common_voice_ky_18449521  476    0   220 15 
+INFO: cmn.c(133): CMN: 53.96  8.18  9.42 12.31 -2.02 13.87 -12.20 10.29 -14.11 -3.69 -4.13 -0.40 -2.61 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449524 ignored
+utt>   404  common_voice_ky_18449524  177    0    80 19 
+INFO: cmn.c(133): CMN: 52.11 10.79 10.42  0.44 -9.05 17.25 -13.92  5.60 -12.95 -4.28 -6.89  3.08 -1.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449533 ignored
+utt>   405  common_voice_ky_18449533  314    0   120 8 
+INFO: cmn.c(133): CMN: 58.72  4.23 16.81  5.58 -3.62 14.17 -16.12 12.17 -14.83 -8.61 -10.43  4.38 -1.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449535 ignored
+utt>   406  common_voice_ky_18449535  356    0   180 9 
+INFO: cmn.c(133): CMN: 49.21  6.33  9.81  9.44 -12.15 15.23 -1.20  1.36 -22.82  2.30 -8.15 -1.12  5.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449561 ignored
+utt>   407  common_voice_ky_18449561  346    0   136 10 
+INFO: cmn.c(133): CMN: 55.74  8.37  7.33  7.34 -9.29 16.84 -11.33  4.67 -28.80  7.06 -11.90 -2.95  9.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449562 ignored
+utt>   408  common_voice_ky_18449562  315    0   164 13 
+INFO: cmn.c(133): CMN: 52.94 -1.46  3.94  5.23 -5.07 11.69  2.09 -5.97 -22.49 10.63 -8.87 -3.22  3.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449564 ignored
+utt>   409  common_voice_ky_18449564  293    0   128 15 
+INFO: cmn.c(133): CMN: 54.35  5.42  4.05  9.03 -8.75 13.85 -0.17  1.02 -21.81  9.07 -10.06 -2.38  4.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449563 ignored
+utt>   410  common_voice_ky_18449563  551    0   228 20 
+INFO: cmn.c(133): CMN: 54.65  2.65  9.28 19.73 -4.84 12.44  1.33  1.15 -23.37  6.50 -12.94 -0.35  5.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449582 ignored
+utt>   411  common_voice_ky_18449582  341    0   160 9 
+INFO: cmn.c(133): CMN: 54.87 14.07  8.32  7.94 -16.21 17.87  0.31  6.22 -23.46  9.83 -9.11 -5.85  2.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449585 ignored
+utt>   412  common_voice_ky_18449585  486    0   220 14 
+INFO: cmn.c(133): CMN: 56.99  6.95  6.84  4.88 -8.41 13.24 -2.73  4.79 -28.59  5.76 -9.54 -2.40  3.61 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449589 ignored
+utt>   413  common_voice_ky_18449589  330    0   176 15 
+INFO: cmn.c(133): CMN: 51.91  7.07  9.65  6.05 -2.33  9.81 -7.00  4.94 -26.03  4.61 -10.30 -4.51 -1.23 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449593 ignored
+utt>   414  common_voice_ky_18449593  286    0   136 17 
+INFO: cmn.c(133): CMN: 54.96  7.54  3.24 -6.07 -14.04 18.71 -4.02  4.78 -18.14  5.25 -7.88  2.74 -0.07 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449595 ignored
+utt>   415  common_voice_ky_18449595  293    0    96 16 
+INFO: cmn.c(133): CMN: 55.74  3.38  1.00 12.57 -0.78  9.14 -11.33  4.02 -19.11  7.76 -10.12 -5.38  3.16 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449597 ignored
+utt>   416  common_voice_ky_18449597  430    0   196 1 
+INFO: cmn.c(133): CMN: 53.83  1.77  7.94 16.86 -6.19 11.31 -4.35 10.40 -20.10  6.38 -10.06  0.03 -0.19 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449605 ignored
+utt>   417  common_voice_ky_18449605  358    0   124 9 
+INFO: cmn.c(133): CMN: 54.88  0.85  6.34  8.23 -6.18  9.74 -4.30  6.42 -16.31  9.16 -10.49 -2.98  3.05 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449598 ignored
+utt>   418  common_voice_ky_18449598  510    0   228 23 
+INFO: cmn.c(133): CMN: 58.49  4.83  9.49  6.19 -7.52 14.40  2.59  5.07 -23.33 11.99 -11.95 -3.02 -0.23 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449606 ignored
+utt>   419  common_voice_ky_18449606  466    0   232 6 
+INFO: cmn.c(133): CMN: 54.74 -2.36  2.30  3.59 -8.22  8.98 -3.88  8.58 -13.42 16.15 -12.39  3.78  2.86 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449609 ignored
+utt>   420  common_voice_ky_18449609  264    0   100 19 
+INFO: cmn.c(133): CMN: 54.56  1.93  1.05 15.08 -7.70  6.10 -3.56  8.39 -19.49  6.41 -14.31 -1.22  0.41 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449608 ignored
+utt>   421  common_voice_ky_18449608  558    0   224 10 
+INFO: cmn.c(133): CMN: 52.62  7.04  6.55  3.70 -7.26 14.35 -1.40  6.70 -17.90  3.14 -11.13  1.77  0.56 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449620 ignored
+utt>   422  common_voice_ky_18449620  460    0   188 13 
+INFO: cmn.c(133): CMN: 54.55  2.32  6.89  7.38 -5.81 11.91 -1.93  3.15 -20.98  7.89 -11.23  2.66 -0.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449621 ignored
+utt>   423  common_voice_ky_18449621  432    0   180 16 
+INFO: cmn.c(133): CMN: 56.82 11.00  6.51 11.46 -8.38 11.20 -2.82  5.24 -27.82  5.31 -9.64 -2.14 -0.24 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449623 ignored
+utt>   424  common_voice_ky_18449623  382    0   152 5 
+INFO: cmn.c(133): CMN: 56.50  6.88  6.40  6.00 -5.25 12.20 -4.30  5.33 -23.77 10.07 -13.46  1.27  1.19 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449624 ignored
+utt>   425  common_voice_ky_18449624  422    0   196 18 
+INFO: cmn.c(133): CMN: 54.70  4.98  4.02  6.80 -4.72 10.66 -9.25  5.97 -17.14  6.59 -13.29 -0.04  4.36 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449622 ignored
+utt>   426  common_voice_ky_18449622  656    0   236 15 
+INFO: cmn.c(133): CMN: 53.63  7.98  2.29  6.68 -6.46 11.68 -6.00  4.07 -17.76  7.95 -14.86 -1.04  2.10 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449645 ignored
+utt>   427  common_voice_ky_18449645  404    0   164 18 
+INFO: cmn.c(133): CMN: 52.87  0.86 13.16  5.81 -8.12 14.70 -6.51  4.45 -21.44  7.03 -5.62 -0.41 -2.32 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449670 ignored
+utt>   428  common_voice_ky_18449670  305    0   116 11 
+INFO: cmn.c(133): CMN: 57.83 10.63  9.78  3.88 -11.54 17.05 -5.11 10.87 -22.11  4.66 -15.76  2.71  2.60 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449649 ignored
+utt>   429  common_voice_ky_18449649  412    0   212 1 
+INFO: cmn.c(133): CMN: 55.97  0.75  8.35  8.88 -3.42 15.29 -10.30  7.97 -23.43  9.49 -12.26 -0.04 -0.90 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449646 ignored
+utt>   430  common_voice_ky_18449646  539    0   196 21 
+INFO: cmn.c(133): CMN: 58.78  5.14  6.82 12.49 -4.34 15.65 -12.04  6.46 -16.66  7.14 -14.56  3.24 -1.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449667 ignored
+utt>   431  common_voice_ky_18449667  590    0   220 20 
+INFO: cmn.c(133): CMN: 56.99  7.43  3.57  4.86 -8.46 15.00 -10.82  6.05 -16.14 13.24 -10.85  3.40  2.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449690 ignored
+utt>   432  common_voice_ky_18449690  548    0   172 19 
+INFO: cmn.c(133): CMN: 53.95  6.89  1.39  6.32 -6.43 16.57 -11.86 -2.12 -18.38  8.87 -9.74 -1.99  4.70 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449672 ignored
+utt>   433  common_voice_ky_18449672  529    0   160 18 
+INFO: cmn.c(133): CMN: 51.95 -0.66  1.44  6.19 -6.67 10.31 -7.27  0.84 -19.10  8.26 -8.99 -1.64  1.33 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449673 ignored
+utt>   434  common_voice_ky_18449673  383    0   176 20 
+INFO: cmn.c(133): CMN: 52.59  2.11  5.70  2.39 -7.07 14.55 -5.44  1.12 -17.47  7.22 -6.25  2.03 -0.34 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449691 ignored
+utt>   435  common_voice_ky_18449691  484    0   192 22 
+INFO: cmn.c(133): CMN: 54.84 -7.33  3.28 11.72 -10.93 11.83 -8.80  5.84 -10.71  4.57 -10.59  4.51  6.79 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449694 ignored
+utt>   436  common_voice_ky_18449694  233    0   100 13 
+INFO: cmn.c(133): CMN: 57.20  4.12  2.69  7.55 -3.65  9.85 -13.76  4.68 -15.50 13.70 -12.97  1.60  1.64 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449693 ignored
+utt>   437  common_voice_ky_18449693  568    0   232 21 
+INFO: cmn.c(133): CMN: 53.62  7.38 11.53  7.27 -11.85 12.84 -6.69  5.48 -23.06  2.40 -12.77  2.98 -1.49 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449692 ignored
+utt>   438  common_voice_ky_18449692  543    0   236 19 
+INFO: cmn.c(133): CMN: 56.25  1.60  6.34  6.74 -6.77 12.09 -4.75  3.58 -26.59  4.63 -7.55 -1.42 -0.96 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449703 ignored
+utt>   439  common_voice_ky_18449703  467    0   224 17 
+INFO: cmn.c(133): CMN: 56.54  2.35  8.96 11.28 -11.22 13.85 -9.91  8.98 -20.10  8.92 -9.62  3.58  1.86 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449704 ignored
+utt>   440  common_voice_ky_18449704  393    0   144 11 
+INFO: cmn.c(133): CMN: 54.93  4.97  4.13 15.09 -4.06 15.91 -8.51  2.57 -10.14 10.85 -11.21 -0.56  1.12 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449706 ignored
+utt>   441  common_voice_ky_18449706  287    0   140 17 
+INFO: cmn.c(133): CMN: 56.51  6.53  1.12  1.97 -20.51 13.21 -0.47  6.16 -18.54 12.70 -5.00  0.37  5.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449709 ignored
+utt>   442  common_voice_ky_18449709  335    0   132 15 
+INFO: cmn.c(133): CMN: 56.37 -1.95 13.82 17.28 -6.18 11.82 -9.06  7.55 -26.25 -3.37 -8.60  1.09  5.69 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449711 ignored
+utt>   443  common_voice_ky_18449711  487    0   208 17 
+INFO: cmn.c(133): CMN: 59.14  1.66  4.63  7.69 -19.93 16.52 -0.96 -0.05 -11.70  8.06 -7.18  0.03  4.07 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449713 ignored
+utt>   444  common_voice_ky_18449713  469    0   212 16 
+INFO: cmn.c(133): CMN: 55.59  6.78  5.43 -5.67 -19.05 17.14 -0.42  0.67 -15.72 14.23 -3.40  0.15  5.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449723 ignored
+utt>   445  common_voice_ky_18449723  220    0    80 12 
+INFO: cmn.c(133): CMN: 58.80  1.88  2.22 14.28 -11.05 15.46 -10.47  9.63 -14.00 11.42 -9.21 -3.87  7.46 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449720 ignored
+utt>   446  common_voice_ky_18449720  414    0   172 16 
+INFO: cmn.c(133): CMN: 55.04  6.27 11.31 15.60 -11.88 15.67 -9.98  4.54 -19.01  4.69 -11.54  6.08 -2.03 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449733 ignored
+utt>   447  common_voice_ky_18449733  282    0   132 20 
+INFO: cmn.c(133): CMN: 53.07  7.69  6.68 13.53 -8.34 13.31 -8.01  5.18 -15.61  7.47 -8.64  4.19 -2.48 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449748 ignored
+utt>   448  common_voice_ky_18449748  268    0   136 24 
+INFO: cmn.c(133): CMN: 57.26  8.14  6.40  6.65 -10.63 18.87 -6.91 -1.48 -16.65  7.99 -9.14 -2.26  5.75 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449750 ignored
+utt>   449  common_voice_ky_18449750  414    0   168 18 
+INFO: cmn.c(133): CMN: 56.14  2.16  7.43 10.80 -6.86 20.54 -4.28  5.08 -17.88  4.35 -10.00  0.57  2.55 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449749 ignored
+utt>   450  common_voice_ky_18449749  398    0   212 14 
+INFO: cmn.c(133): CMN: 56.60  5.64  1.56 17.36 -10.62 14.66 -8.35  3.01 -17.73  7.17 -10.97  1.67  4.81 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449752 ignored
+utt>   451  common_voice_ky_18449752  529    0   172 22 
+INFO: cmn.c(133): CMN: 57.01  3.83  3.33  7.68 -13.07 17.30 -6.09 -1.45 -18.89  3.92 -8.56  2.98 -0.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449751 ignored
+utt>   452  common_voice_ky_18449751  474    0   168 17 
+INFO: cmn.c(133): CMN: 52.22 28.70 18.31  7.60 -7.74  6.02  9.28  1.61 -6.67 -3.19 -1.46 -5.57  0.70 
+utt>   453  common_voice_ky_18449921  293    0   144 14  2 4 4.059167e-12 -1.398022e+02 -4.096204e+04
+INFO: cmn.c(133): CMN: 50.22 24.18 14.91  7.95 -11.40 10.34 -2.49  2.02 -4.08 -5.94  2.34 -5.67  2.65 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449920 ignored
+utt>   454  common_voice_ky_18449920  364    0   148 16 
+INFO: cmn.c(133): CMN: 48.21 21.28 19.14 13.48 -8.90  9.41  0.46  1.51  2.87  3.76 -3.22  0.80  0.40 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449919 ignored
+utt>   455  common_voice_ky_18449919  563    0   232 20 
+INFO: cmn.c(133): CMN: 56.49 20.39  4.66  4.66 -5.81  4.82  1.39  2.51 -2.53 -7.38 -3.11 -1.49 -0.71 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449954 ignored
+utt>   456  common_voice_ky_18449954  395    0   176 19 
+INFO: cmn.c(133): CMN: 56.28 34.95  5.27 -7.98  0.45  9.44 -3.36  5.09 -9.49 -4.44 -4.15 -5.68 -1.52 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449966 ignored
+utt>   457  common_voice_ky_18449966  303    0   148 16 
+INFO: cmn.c(133): CMN: 48.79 20.68  3.24  9.52  7.06  2.29 -7.66  4.94 -6.32 -6.25 -1.59 -7.74  1.90 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449965 ignored
+utt>   458  common_voice_ky_18449965  490    0   184 18 
+INFO: cmn.c(133): CMN: 51.07 20.92 17.96 -3.71  1.50 12.89 -9.42  2.38 -2.65 -12.76 -5.40  2.15  3.89 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449977 ignored
+utt>   459  common_voice_ky_18449977  258    0   148 16 
+INFO: cmn.c(133): CMN: 50.09 28.60  2.09 -4.11 -0.33 14.59 -8.24 -4.66  8.86 -3.81  1.37 -7.51  4.14 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449978 ignored
+utt>   460  common_voice_ky_18449978  342    0   148 19 
+INFO: cmn.c(133): CMN: 50.96 22.27  9.46 -5.43 -0.36  8.10 -1.21 -9.95 -2.89 -6.58 -12.12 -5.00  3.18 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449981 ignored
+utt>   461  common_voice_ky_18449981  267    0   128 7 
+INFO: cmn.c(133): CMN: 54.12 22.82  5.16 -5.02 -5.00 11.79 -5.00 -6.51 -0.56 -10.08 -11.28 -0.76  3.08 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18449979 ignored
+utt>   462  common_voice_ky_18449979  457    0   220 16 
+INFO: cmn.c(133): CMN: 48.64 18.70 13.99  2.45 -2.91 13.24 -17.56 -5.09 14.95 11.06 -17.03  2.23  1.26 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450024 ignored
+utt>   463  common_voice_ky_18450024  323    0   124 10 
+INFO: cmn.c(133): CMN: 46.81 24.23 23.32 -1.63 -13.00 17.02 -9.89  2.78  3.38  1.75 -10.40 -1.18 -1.51 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450025 ignored
+utt>   464  common_voice_ky_18450025  379    0   200 9 
+INFO: cmn.c(133): CMN: 51.68 23.89  9.13 -7.12 -2.12 14.44 -9.65  0.25  5.75 -4.69 -8.26  4.22 -1.19 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450033 ignored
+utt>   465  common_voice_ky_18450033  300    0   124 8 
+INFO: cmn.c(133): CMN: 48.54 17.53 13.43 15.11  3.58 11.04 -15.37  3.08 -0.46 -12.61 -14.03 -1.06 -0.28 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450035 ignored
+utt>   466  common_voice_ky_18450035  306    0   156 19 
+INFO: cmn.c(133): CMN: 51.06 20.38  8.70 -1.45  4.98 13.13 -12.28 -0.54  1.68 -10.71 -11.18  4.52 -5.22 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450034 ignored
+utt>   467  common_voice_ky_18450034  424    0   152 17 
+INFO: cmn.c(133): CMN: 49.67 22.52  9.59  3.08 -8.44 17.83 -10.32 -1.25 -0.74 -18.49 -11.30 -4.68 -0.38 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450036 ignored
+utt>   468  common_voice_ky_18450036  270    0   124 18 
+INFO: cmn.c(133): CMN: 48.47 24.25  6.42 -1.19 -3.47  9.88 -11.62  3.56  7.10 -15.87 -12.26 -3.87 -6.15 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450037 ignored
+utt>   469  common_voice_ky_18450037  266    0   116 3 
+INFO: cmn.c(133): CMN: 48.98 19.58 11.37  0.13  4.22 13.26 -15.41  3.41 -0.01 -9.07 -5.54  0.09 -1.88 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450048 ignored
+utt>   470  common_voice_ky_18450048  342    0   188 7 
+INFO: cmn.c(133): CMN: 50.86 21.52  6.24  2.42  3.25 14.41 -20.25 -3.96  3.48 -9.39 -8.91 -4.79  0.21 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450050 ignored
+utt>   471  common_voice_ky_18450050  385    0   200 14 
+INFO: cmn.c(133): CMN: 50.95 16.27 14.62  4.48 -1.05 20.46 -9.24 -0.64 -4.74 -18.60 -8.26 -0.84 -3.55 
+utt>   472  common_voice_ky_18450049  364    0   180 15  2 3 3.013033e-12 -1.493002e+02 -5.434527e+04
+INFO: cmn.c(133): CMN: 48.69 21.75 15.71  5.70  0.80 12.00 -12.13  2.25  5.27 -16.53 -12.42  0.91 -1.59 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450051 ignored
+utt>   473  common_voice_ky_18450051  330    0   188 17 
+INFO: cmn.c(133): CMN: 47.28 17.90 10.85 -5.92 -6.62 15.00 -6.42 -3.96  0.35 -10.76 -5.77 -0.54 -1.80 
+utt>   474  common_voice_ky_18450059  403    0   180 13  2 4 2.960320e-12 -1.495544e+02 -6.027042e+04
+INFO: cmn.c(133): CMN: 50.66 20.24  5.63 -11.67  1.80  9.21 -10.53 -1.27 -2.82 -10.66 -9.64  3.00 -5.31 
+utt>   475  common_voice_ky_18450052  463    0   196 13  2 3 2.859938e-12 -1.489722e+02 -6.897413e+04
+INFO: cmn.c(133): CMN: 50.76 22.31  6.63 -11.06  1.29  8.59 -4.05 -6.07  9.36 -14.36 -7.02  2.09 -7.54 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450060 ignored
+utt>   476  common_voice_ky_18450060  475    0   224 10 
+INFO: cmn.c(133): CMN: 48.91 18.66 17.34  8.75  1.14 17.90 -16.11 -4.14 -1.02 -8.89 -9.08 -1.49  1.78 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450065 ignored
+utt>   477  common_voice_ky_18450065  220    0   116 18 
+INFO: cmn.c(133): CMN: 52.32 17.51  7.84  1.80  5.91  9.35 -12.26  5.15  4.64 -13.90 -12.60 -2.69 -5.34 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450066 ignored
+utt>   478  common_voice_ky_18450066  336    0   180 4 
+INFO: cmn.c(133): CMN: 52.40 25.94 12.39 -5.99 -1.02 19.56 -5.70 -1.61  0.96 -10.84 -6.52  4.65 -9.00 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450069 ignored
+utt>   479  common_voice_ky_18450069  195    0    88 14 
+INFO: cmn.c(133): CMN: 49.68 28.24  8.59 -0.66  0.26 17.17 -7.74 -4.41 -1.62 -7.86 -11.36  0.19 -4.31 
+utt>   480  common_voice_ky_18450067  360    0   188 14  2 4 3.175146e-12 -1.464726e+02 -5.273014e+04
+INFO: cmn.c(133): CMN: 44.63 27.88 11.50 -1.61 -0.04 11.12  1.19  1.45 -6.22 -6.37 -10.67  0.61 -4.48 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450080 ignored
+utt>   481  common_voice_ky_18450080  461    0   168 13 
+INFO: cmn.c(133): CMN: 48.87 22.14  4.60 -0.08  4.08 11.15 -6.10  3.34 -0.67 -2.95 -12.30  1.58 -8.45 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450082 ignored
+utt>   482  common_voice_ky_18450082  276    0   132 17 
+INFO: cmn.c(133): CMN: 50.96 25.10 12.52 -1.16 -8.70 17.97 -2.04 -3.31  2.53 -7.00 -6.52  3.13 -8.79 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450081 ignored
+utt>   483  common_voice_ky_18450081  404    0   228 12 
+INFO: cmn.c(133): CMN: 48.07 19.62 16.23 -2.73 -2.10 12.65 -8.07  0.59 -0.67 -6.81 -7.32 -5.39  7.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450097 ignored
+utt>   484  common_voice_ky_18450097  295    0   116 6 
+INFO: cmn.c(133): CMN: 49.64 16.87  5.29  7.00 -0.70 16.91 -9.64 -4.79 -6.05 -6.54 -12.31 -1.25  9.07 
+utt>   485  common_voice_ky_18450112  501    0   228 14  2 3 4.255758e-12 -1.488184e+02 -7.455800e+04
+INFO: cmn.c(133): CMN: 46.65 17.15 12.05  5.69 -3.55 12.18  1.10 -1.18 -3.47 -4.94 -8.37  2.24  1.20 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450114 ignored
+utt>   486  common_voice_ky_18450114  204    0    96 13 
+INFO: cmn.c(133): CMN: 52.54 27.84 12.55 -5.57 -8.28 19.76  2.64 -9.09 -2.14 -2.89 -14.96  1.17  2.27 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450116 ignored
+utt>   487  common_voice_ky_18450116  238    0   116 19 
+INFO: cmn.c(133): CMN: 54.21 20.54 14.00 -0.34 -12.80 18.77 -15.20 -14.56 13.94 -1.59 -8.18 -1.70  6.35 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450170 ignored
+utt>   488  common_voice_ky_18450170  378    0   208 19 
+INFO: cmn.c(133): CMN: 51.34 32.40 10.94 -17.14 -11.42 25.83 -9.67 -3.34 -0.03 -2.79 -13.34  2.41 -9.30 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450172 ignored
+utt>   489  common_voice_ky_18450172  448    0   216 3 
+INFO: cmn.c(133): CMN: 47.77 18.04  7.73  0.32 -2.49 15.82 -20.10  2.21  5.99 -2.56 -4.39 -4.35  2.94 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450173 ignored
+utt>   490  common_voice_ky_18450173  300    0   156 17 
+INFO: cmn.c(133): CMN: 48.92 27.88  8.82 -7.89 -4.50 21.78 -14.56 -4.91  0.85 -11.45 -7.67 -5.34 -7.62 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450187 ignored
+utt>   491  common_voice_ky_18450187  435    0   212 22 
+INFO: cmn.c(133): CMN: 47.43 28.31 13.50 -7.86 -11.19 28.18 -16.16 -6.19  5.14 -15.36  1.85 -7.42 -2.92 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450189 ignored
+utt>   492  common_voice_ky_18450189  272    0   108 12 
+INFO: cmn.c(133): CMN: 47.54 22.21  8.40  0.51  3.04 16.19 -14.32 -7.77  2.98 -9.21 -7.55  0.61 -1.90 
+utt>   493  common_voice_ky_18450193  254    0   116 12  2 3 4.016857e-12 -1.450756e+02 -3.684921e+04
+INFO: cmn.c(133): CMN: 51.94 24.47 15.13 -0.15 -4.98 26.64 -14.65 -5.99  4.43 -6.46 -9.21 -2.14 -5.73 
+ERROR: "backward.c", line 421: Failed to align audio to trancript: final state of the search is not reached
+ERROR: "baum_welch.c", line 324: common_voice_ky_18450212 ignored
+utt>   494  common_voice_ky_18450212  374    0   188 15 
+INFO: cmn.c(133): CMN: 49.70 22.65  8.83  2.99 -9.72 24.90 -17.15 -10.27  4.53 -5.09 -0.58 -2.31  1.78 
+utt>   495  common_voice_ky_18450194  450    0   172 13  2 3 3.474623e-12 -1.436892e+02 -6.466012e+04
+overall> stats 15673 (-0) -1.430829e+02 -2.242538e+06
+WARN: "accum.c", line 642: The following senones never occur in the input data
+	24 25 26 30 31 32 39 40 41 54 
+	55 56 66 67 68 105 106 107 142 144 
+	157 158 170 171 173 176 199 201 206 207 
+	220 224 229 230 231 234 235 237 238 239 
+	246 247 248 249 253 254 257 262 263 264 
+	265 267 287 288 289 290 291 293 297 314 
+	320 321 322 325 335 338 343 346 348 354 
+	356 357 360 365 368 370 375 386 391 393 
+	399 401 402 404 408 410 411 412 414 416 
+	417 420 422 423 424 425 429 430 431 432 
+	434 436 441 444 446 447 457 459 465 467 
+	468 469 470 474 477 480 483 486 494 495 
+	496 504 510 512 514 515 520 526 527 529 
+	530 532 536 537 539 540 542 545 546 548 
+	550 551 562 564 565 566 567 569 570 579 
+	581 583 586 589 590 592 599 604 605 607 
+	618 622 623 626 629 631 632 633 
+INFO: s3mixw_io.c(233): Wrote /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/mixw_counts [641x1x2 array]
+INFO: s3tmat_io.c(176): Wrote /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/tmat_counts [47x3x4 array]
+INFO: s3gau_io.c(485): Wrote /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/gauden_counts with means with vars (2pass) [641x1x2 vector arrays]
+INFO: main.c(999): Counts saved to /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1
+Thu May  7 00:24:18 2020

@@ -1,0 +1,38 @@
+Current configuration:
+[NAME]		[DEFLT]			[VALUE]
+-example	no			no
+-fullvar	no			no
+-help		no			no
+-meanfn					/home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/means
+-mixwfn					/home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/mixture_weights
+-moddeffn				/home/abdy/Desktop/diploma/kg/model_architecture/kg.ci.mdef
+-niter		0			1
+-npermute	6			12
+-qstperstt	8			20
+-questfn				/home/abdy/Desktop/diploma/kg/model_architecture/kg.tree_questions
+-tempfn		/tmp/TEMP.QUESTS	/tmp/TEMP.QUESTS
+-type					.cont.
+-varfloor	1.0e-08			1.000000e-08
+-varfn					/home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/variances
+
+INFO: main.c(792): Reading: /home/abdy/Desktop/diploma/kg/model_architecture/kg.ci.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 47 total models defined (47 base, 0 tri)
+INFO: model_def_io.c(575): 188 total states
+INFO: model_def_io.c(576): 141 total tied states
+INFO: model_def_io.c(577): 141 total tied CI states
+INFO: model_def_io.c(578): 47 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(811): Reading: /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/mixture_weights
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/mixture_weights [141x1x1 array]
+INFO: s3gau_io.c(169): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/means [141x1x1 array]
+INFO: s3gau_io.c(169): Read /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont/variances [141x1x1 array]
+INFO: main.c(1109): Done building questions using state 0
+INFO: main.c(1110):  21 questions from state 0
+INFO: main.c(1109): Done building questions using state 1
+INFO: main.c(1110):  20 questions from state 1
+INFO: main.c(1109): Done building questions using state 2
+INFO: main.c(1110):  20 questions from state 2
+INFO: main.c(1115): Stored questions in /home/abdy/Desktop/diploma/kg/model_architecture/kg.tree_questions
+Thu May  7 00:23:20 2020

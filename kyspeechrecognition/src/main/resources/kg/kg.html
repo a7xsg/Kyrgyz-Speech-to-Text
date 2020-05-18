@@ -1,0 +1,1325 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="REFRESH" content="60">
+<title>kg</title>
+<style type="text/css">
+body {
+ background: #f0f0f5;
+}
+p,span {
+ font-family: monospace;
+}
+p {
+ margin-right: 6em;
+}
+p.phase {
+ font-weight: bold;
+ margin-bottom: 0;
+}
+p.result, p.WARNING, p.error {
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: 5em;
+}
+span.status {
+ float: right;
+ margin-top: -1em;
+}
+.passed, .completed {
+ color: #00D000;
+}
+.WARNING, .warning {
+ color: #555500;
+}
+.FAILED, .error {
+ color: #DD0000;
+}
+</style>
+</head>
+<body>
+<h1 class="experiment">/home/abdy/Desktop/diploma/kg</h1>
+<h2 class="hostname">Training kg on abdy-Aspire-E5-576G</h2>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2020-05-07 00:21)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 2 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.train-2-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 3 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.test-3-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 3 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.train-3-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 2 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.test-2-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 1 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.train-1-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 4 of 4) </p>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.test-1-4.log">Log File</a></p><p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.test-4-4.log">Log File</a></p><p class='audio files'>Extracting features from  segments starting at  (part 4 of 4) </p>
+<p class='result'>sphinx_fe <a href="file:///home/abdy/Desktop/diploma/kg/logdir/000.comp_feat/kg.train-4-4.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2020-05-07 00:22)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 10554 words using 47 phones</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: 2.28723055555556</p>
+<p class='result'>This is a small amount of data, no comment at this time</p>
+<span class='status WARNING'>WARNING</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 10551</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<span class='status passed'>passed</span>
+<hr>
+<h3>MODULE: 0000 train grapheme-to-phoneme model	(2020-05-07 00:22)</h3>
+<p>Skipped (set $CFG_G2P_MODEL = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 01 Train LDA transformation	(2020-05-07 00:22)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 02 Train MLLT transformation	(2020-05-07 00:22)</h3>
+<p>Skipped (set $CFG_LDA_MLLT = 'yes' to enable)</p>
+<hr>
+<h3>MODULE: 05 Vector Quantization	(2020-05-07 00:22)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: 10 Training Context Independent models for forced alignment and VTLN	(2020-05-07 00:22)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 11 Force-aligning transcripts	(2020-05-07 00:22)</h3>
+<p>Skipped:  $ST::CFG_FORCEDALIGN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 12 Force-aligning data for VTLN	(2020-05-07 00:22)</h3>
+<p>Skipped:  $ST::CFG_VTLN set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 20 Training Context Independent models	(2020-05-07 00:22)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...</span>
+<span class='progress'>models...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Flat initialize</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.make_ci_mdef_fromphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>mk_flat <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.makeflat_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.initmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.normmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_gau <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.initvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.normvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.cpmean_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>cp_parm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.cpvar_cihmm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.1-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.1-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.1-4.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -163.672915935453</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.2-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.2-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.2-4.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.2-1.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -161.639622396324</p>
+<p class='result'>Convergence Ratio = 2.03329353912946</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.3-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.3-4.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -159.062275504514</p>
+<p class='result'>Convergence Ratio = 2.57734689181035</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.4-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.4-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.4-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.4-4.bw.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 10 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 6 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -157.937356844742</p>
+<p class='result'>Convergence Ratio = 1.12491865977174</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.5-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.5-4.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.5-3.bw.log">Log File</a></p><p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 2 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 44 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 14 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -157.519638043422</p>
+<p class='result'>Convergence Ratio = 0.417718801320035</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.6-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.6-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 8 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 90 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 32 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -157.314437455271</p>
+<p class='result'>Convergence Ratio = 0.205200588150603</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.7-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.7-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.7-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 4 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 12 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 138 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 52 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -157.161264321492</p>
+<p class='result'>Convergence Ratio = 0.153173133778665</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.8-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.8-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.8-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.8-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 14 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 180 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -157.034776650243</p>
+<p class='result'>Convergence Ratio = 0.126487671248924</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 9 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 9 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 9 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.9-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.9-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.9-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 9 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.9-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 22 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 16 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 216 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 98 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 9</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/20.ci_hmm/kg.1.9.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -156.936925564752</p>
+<p class='result'>Training completed after 9 iterations</p>
+<hr>
+<h3>MODULE: 30 Training Context Dependent models	(2020-05-07 00:22)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Initialization</p>
+<p class='result'>mk_mdef_gen <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.make_alltriphonelist.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>init_mixw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.copycitocd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for iteration: 1 (1 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 1 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.1-4.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 1 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.1-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 1 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.1-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 22 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 21 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 261 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 124 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -156.855385015503</p>
+<p class='result'>Baum welch starting for iteration: 2 (3 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 2 (1 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 2 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.2-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.2-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.2-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 2 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 285 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 22 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 25 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 166 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -152.297861270397</p>
+<p class='result'>Convergence Ratio = 4.55752374510647</p>
+<p class='result'>Baum welch starting for iteration: 3 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 3 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.3-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 3 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.3-4.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 3 (1 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.3-1.bw.log">Log File</a></p><p class='error'>ERROR: This step had 378 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 44 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 242 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 32 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -149.722028910877</p>
+<p class='result'>Convergence Ratio = 2.57583235952046</p>
+<p class='result'>Baum welch starting for iteration: 4 (1 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 4 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.4-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 4 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.4-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.4-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 4 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 498 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 74 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 389 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 48 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -148.480017431707</p>
+<p class='result'>Convergence Ratio = 1.24201147917029</p>
+<p class='result'>Baum welch starting for iteration: 5 (1 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 5 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.5-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 5 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.5-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 5 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 651 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 167 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 100 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -147.16194423928</p>
+<p class='result'>Convergence Ratio = 1.31807319242736</p>
+<p class='result'>Baum welch starting for iteration: 6 (1 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 6 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.6-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 6 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.6-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 6 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 703 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 869 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 352 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 182 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.759476837407</p>
+<p class='result'>Convergence Ratio = 2.40246740187317</p>
+<p class='result'>Baum welch starting for iteration: 7 (1 of 4) </p>
+<p class='result'>Baum welch starting for iteration: 7 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.7-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.7-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 7 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.7-4.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 7 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.7-2.bw.log">Log File</a></p><p class='error'>ERROR: This step had 868 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 708 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 434 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 217 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -141.352977022515</p>
+<p class='result'>Convergence Ratio = 3.40649981489159</p>
+<p class='result'>Baum welch starting for iteration: 8 (3 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.8-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 8 (2 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.8-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 8 (1 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.8-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for iteration: 8 (4 of 4) </p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.8-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 908 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 914 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 930 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/30.cd_hmm_untied/kg.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='warning'>WARNING: *WARNING*: NEGATIVE CONVERGENCE RATIO AT ITER 8! CHECK BW AND NORM LOGFILES</p>
+<p class='result'>Current Overall Likelihood Per Frame = -142.594831163931</p>
+<p class='result'>Training completed after 8 iterations</p>
+<hr>
+<h3>MODULE: 40 Build Trees	(2020-05-07 00:23)</h3>
+<p class='phase'>Phase 1: Cleaning up old log files...</p>
+<p class='phase'>Phase 2: Make Questions</p>
+<p class='result'>make_quests <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.make_questions.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Tree building</p>
+<p class='result'>Processing each phone with each state</p>
+<p class='result'>b 0 </p>
+<p class='result'>v 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.v.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.b.0.log">Log File</a></p><p class='result'>a 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a.0.log">Log File</a></p><p class='result'>a0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a0.0.log">Log File</a></p><p class='result'>g 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.g.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>a0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>g 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.g.1.log">Log File</a></p><p class='result'>a0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>v 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.v.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>g 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.g.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>v 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.v.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>b 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.b.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>b 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.b.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>a 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>a 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.a.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>jo 0 </p>
+<p class='result'>je 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.je.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.jo.0.log">Log File</a></p><p class='result'>gh 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.gh.0.log">Log File</a></p><p class='result'>d 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.d.0.log">Log File</a></p><p class='result'>zh 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.zh.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>jo 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.jo.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>jo 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.jo.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>gh 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.gh.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>gh 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.gh.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>zh 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.zh.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>z 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.z.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>d 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.d.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>zh 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.zh.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>z 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.z.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>je 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.je.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>d 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.d.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>z 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.z.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>i 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.i.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>je 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.je.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>k 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.k.0.log">Log File</a></p><p class='result'>j 0 </p>
+<p class='result'>kh 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.j.0.log">Log File</a></p><p class='result'>kh0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh0.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>kh0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>kh0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>j 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.j.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>i 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.i.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>k 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.k.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>kh 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>j 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.j.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>k 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.k.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>kh 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.kh.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>i 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.i.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>m 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.m.0.log">Log File</a></p><p class='result'>ng 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ng.0.log">Log File</a></p><p class='result'>n 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.n.0.log">Log File</a></p><p class='result'>o 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o.0.log">Log File</a></p><p class='result'>l 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.l.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ng 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ng.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ng 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ng.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>l 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.l.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>m 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.m.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>o 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>n 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.n.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>l 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.l.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>m 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.m.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>n 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.n.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>o 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>o0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o0.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>o0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>oy 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>oy0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy0.0.log">Log File</a></p><p class='result'>p 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>o0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.o0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>oy0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>oy0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>p 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>oy 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>r 0 </p>
+<p class='result'>p0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p0.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.r.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>p0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>p0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>p 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.p.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>oy 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.oy.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>r 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.r.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>r 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.r.2.log">Log File</a></p><p class='result'>s 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s.0.log">Log File</a></p><p class='result'>t 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t.0.log">Log File</a></p><p class='result'>s0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s0.0.log">Log File</a></p><p class='result'>t0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t0.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>s0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>t0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>s0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>t0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>s 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>s 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.s.2.log">Log File</a></p><p class='result'>u 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>t 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>u0 0 </p>
+<p class='result'>uy 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u0.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>u0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>u 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>u0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>t 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.t.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>uy 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>u 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.u.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>uy 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy.2.log">Log File</a></p><p class='result'>f0 0 </p>
+<p class='result'>f 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f0.0.log">Log File</a></p><p class='result'>uy0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy0.0.log">Log File</a></p><p class='result'>h 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.h.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>f 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>h 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.h.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>f0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>f 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>uy0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>h 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.h.2.log">Log File</a></p><p class='result'>f0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.f0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>uy0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.uy0.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>c 0 </p>
+<p class='result'>ch 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ch.0.log">Log File</a></p><p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.c.0.log">Log File</a></p><p class='result'>y 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.y.0.log">Log File</a></p><p class='result'>e 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e.0.log">Log File</a></p><p class='result'>sh 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.sh.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>c 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.c.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>c 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.c.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>e0 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e0.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ch 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ch.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>e0 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e0.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>sh 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.sh.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>e0 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e0.2.log">Log File</a></p><p class='result'>e 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>ch 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ch.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>e 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.e.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>sh 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.sh.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>ju 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ju.0.log">Log File</a></p><p class='result'>ja 0 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ja.0.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ju 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ju.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ju 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ju.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>y 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.y.1.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>ja 1 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ja.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>ja 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.ja.2.log">Log File</a></p><span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='result'>y 2 </p>
+<p class='result'>bldtree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/40.buildtrees/kg.buildtree.y.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Skipping SIL</p>
+<hr>
+<h3>MODULE: 45 Prune Trees	(2020-05-07 00:23)</h3>
+<p class='result'>mk_mdef_gen <a href="file:///home/abdy/Desktop/diploma/kg/logdir/45.prunetree/kg.build.alltriphones.mdef.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 1: Tree Pruning</p>
+<p class='result'>prunetree <a href="file:///home/abdy/Desktop/diploma/kg/logdir/45.prunetree/kg.prunetree.500.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 2: State Tying</p>
+<p class='result'>tiestate <a href="file:///home/abdy/Desktop/diploma/kg/logdir/45.prunetree/kg.tiestate.500.log">Log File</a></p><span class='status completed'>completed</span>
+<hr>
+<h3>MODULE: 50 Training Context dependent models	(2020-05-07 00:23)</h3>
+<p class='phase'>Phase 1: Cleaning up directories:</p>
+<span class='progress'>	accumulator...</span>
+<span class='progress'>logs...</span>
+<span class='progress'>qmanager...
+</span>
+<span class='status completed'>completed</span>
+<p class='phase'>Phase 2: Copy CI to CD initialize</p>
+<p class='result'>init_mixw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.copy.ci.2.cd.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='phase'>Phase 3: Forward-Backward</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.1-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.1-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.1-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 22 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 21 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 261 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 124 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.1.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -156.855385015503</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.2-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.2-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.2-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 18 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 281 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 22 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 160 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -155.968896660371</p>
+<p class='result'>Convergence Ratio = 0.886488355132343</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.3-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.3-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 40 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 371 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 29 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 241 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -155.548799971985</p>
+<p class='result'>Convergence Ratio = 0.420096688385513</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.4-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.4-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.4-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 503 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 67 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 48 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 370 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -155.180657342069</p>
+<p class='result'>Convergence Ratio = 0.368142629916463</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.5-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.5-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 649 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<p class='error'>ERROR: This step had 169 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 634 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 97 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -154.466512360189</p>
+<p class='result'>Convergence Ratio = 0.714144981880082</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.6-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.6-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 870 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 739 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 377 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 199 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -152.974909343003</p>
+<p class='result'>Convergence Ratio = 1.49160301718558</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.7-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.7-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.7-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 503 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 755 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 869 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 264 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -150.682672341008</p>
+<p class='result'>Convergence Ratio = 2.29223700199483</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (1 of 4)</p>
+<p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.8-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.8-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.8-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 1 Gaussian(s), iteration: 8 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.8-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 920 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 934 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 944 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 954 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.1.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='warning'>WARNING: *WARNING*: NEGATIVE CONVERGENCE RATIO AT ITER 8! CHECK BW AND NORM LOGFILES</p>
+<p class='result'>Current Overall Likelihood Per Frame = -151.823542727787</p>
+<p class='result'>Split Gaussians, increase by 1</p>
+<p class='result'>inc_comp <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.split_gaussians.1.1.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -151.823542727787</p>
+<p class='result'>Convergence Ratio = -1.14087038677923</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.1-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.1-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.1-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.1-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 918 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 934 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 934 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 953 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.1.norm.log">Log File</a></p><p class='error'>ERROR: This step had 664 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -149.503264407609</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.2-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.2-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.2-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 933 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 911 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 923 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -147.520649494816</p>
+<p class='result'>Convergence Ratio = 1.98261491279254</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.3-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.3-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 908 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 931 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 912 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -145.865717134847</p>
+<p class='result'>Convergence Ratio = 1.65493235996868</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.4-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.4-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.4-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 930 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 908 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 912 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -144.432444636776</p>
+<p class='result'>Convergence Ratio = 1.43327249807112</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.5-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.5-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 908 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 930 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 912 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -143.445709232535</p>
+<p class='result'>Convergence Ratio = 0.986735404241074</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.6-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.6-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 908 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 930 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 912 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.397110011477</p>
+<p class='result'>Convergence Ratio = 1.04859922105783</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.7-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.7-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>Baum welch starting for 2 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.7-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 930 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 842 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 952 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 882 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.2.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='warning'>WARNING: *WARNING*: NEGATIVE CONVERGENCE RATIO AT ITER 7! CHECK BW AND NORM LOGFILES</p>
+<p class='result'>Current Overall Likelihood Per Frame = -142.801389807143</p>
+<p class='result'>Split Gaussians, increase by 2</p>
+<p class='result'>inc_comp <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.split_gaussians.2.2.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -142.801389807143</p>
+<p class='result'>Convergence Ratio = -0.404279795666156</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.1-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.1-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.1-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 680 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 910 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 652 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 818 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.1.norm.log">Log File</a></p><p class='error'>ERROR: This step had 1592 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -140.89652084051</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.2-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.2-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.2-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 640 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -138.72381005369</p>
+<p class='result'>Convergence Ratio = 2.17271078681983</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.3-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.3-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 640 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -137.357281553398</p>
+<p class='result'>Convergence Ratio = 1.36652850029193</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.4-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.4-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.4-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 640 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -136.63734386736</p>
+<p class='result'>Convergence Ratio = 0.719937686037724</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.5-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.5-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -136.352268185452</p>
+<p class='result'>Convergence Ratio = 0.285075681908353</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.6-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.6-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.6-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -136.160749178435</p>
+<p class='result'>Convergence Ratio = 0.191519007016979</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.7-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.7-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.7-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -136.050015543121</p>
+<p class='result'>Convergence Ratio = 0.110733635313949</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 8 (1 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 8 (3 of 4)</p>
+<p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 8 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.8-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.8-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.8-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 4 Gaussian(s), iteration: 8 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.8-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 8</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.4.8.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -135.950678346212</p>
+<p class='result'>Split Gaussians, increase by 4</p>
+<p class='result'>inc_comp <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.split_gaussians.4.4.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -135.950678346212</p>
+<p class='result'>Convergence Ratio = 0.0993371969090617</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.1-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.1-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.1-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.1.norm.log">Log File</a></p><p class='error'>ERROR: This step had 3272 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -136.272115640821</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.2-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.2-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.2-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -135.423266942002</p>
+<p class='result'>Convergence Ratio = 0.84884869881904</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.3-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.3-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.3-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -134.883321120881</p>
+<p class='result'>Convergence Ratio = 0.539945821120909</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.4-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.4-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.4-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -134.311728395062</p>
+<p class='result'>Convergence Ratio = 0.571592725819272</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.5-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.5-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.5-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -134.049510391687</p>
+<p class='result'>Convergence Ratio = 0.262218003375352</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.6-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.6-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -133.916877609024</p>
+<p class='result'>Convergence Ratio = 0.132632782663109</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.7-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.7-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.7-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 8 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.8.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -133.825439648281</p>
+<p class='result'>Split Gaussians, increase by 8</p>
+<p class='result'>inc_comp <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.split_gaussians.8.8.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -133.825439648281</p>
+<p class='result'>Convergence Ratio = 0.0914379607426099</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 1 (1 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 1 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.1-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 1 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.1-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.1-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 1 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.1-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 810 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 1</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.1.norm.log">Log File</a></p><p class='error'>ERROR: This step had 6308 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -134.185518252065</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 2 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.2-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 2 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.2-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 2 (4 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 2 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.2-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.2-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 808 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 2</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.2.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -133.308792140905</p>
+<p class='result'>Convergence Ratio = 0.876726111160139</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 3 (1 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 3 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.3-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 3 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.3-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.3-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 3 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.3-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 806 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 3</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.3.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -132.691744145481</p>
+<p class='result'>Convergence Ratio = 0.617047995423889</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 4 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.4-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 4 (1 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 4 (2 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.4-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.4-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 4 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.4-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 806 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 4</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.4.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -131.984517157935</p>
+<p class='result'>Convergence Ratio = 0.707226987546051</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 5 (2 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 5 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.5-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.5-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 5 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.5-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 5 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.5-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 806 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 5</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.5.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -131.697713567422</p>
+<p class='result'>Convergence Ratio = 0.286803590513188</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 6 (2 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 6 (1 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.6-2.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.6-1.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 6 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.6-3.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 6 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.6-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 806 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 6</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.6.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -131.540891647793</p>
+<p class='result'>Convergence Ratio = 0.156821919628982</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 7 (2 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 7 (1 of 4)</p>
+<p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 7 (3 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.7-3.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.7-1.bw.log">Log File</a></p><p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.7-2.bw.log">Log File</a></p><p class='result'>Baum welch starting for 16 Gaussian(s), iteration: 7 (4 of 4)</p>
+<p class='result'>bw <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.7-4.bw.log">Log File</a></p><p class='error'>ERROR: This step had 676 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 638 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 806 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='error'>ERROR: This step had 906 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='result'>Normalization for iteration: 7</p>
+<p class='result'>norm <a href="file:///home/abdy/Desktop/diploma/kg/logdir/50.cd_hmm_tied/kg.16.7.norm.log">Log File</a></p><span class='status completed'>completed</span>
+<p class='result'>Current Overall Likelihood Per Frame = -131.442318660812</p>
+<p>Training for 16 Gaussian(s) completed after 7 iterations</p>
+<hr>
+<h3>MODULE: 60 Lattice Generation	(2020-05-07 00:26)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 61 Lattice Pruning	(2020-05-07 00:26)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 62 Lattice Format Conversion	(2020-05-07 00:26)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 65 MMIE Training	(2020-05-07 00:26)</h3>
+<p>Skipped:  $ST::CFG_MMIE set to 'no' in sphinx_train.cfg</p>
+<hr>
+<h3>MODULE: 90 deleted interpolation	(2020-05-07 00:26)</h3>
+<p>Skipped for continuous models</p>
+<hr>
+<h3>MODULE: DECODE Decoding using models previously trained	(2020-05-07 00:26)</h3>
+<p class='result'>Decoding 1547 segments starting at 0 (part 1 of 1) </p>
+<p class='result'>pocketsphinx_batch <a href="file:///home/abdy/Desktop/diploma/kg/logdir/decode/kg-1-1.log">Log File</a></p><span class='status completed'>completed</span>
+<p>        Aligning results to find error rate</p>
+<p class='result'>SENTENCE ERROR: 95.0% (1469/1546)   WORD ERROR RATE: 58.9% (6216/10556)</p>
+<p class='result'>

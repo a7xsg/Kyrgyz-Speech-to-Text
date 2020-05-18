@@ -1,0 +1,24 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-example	no	no
+-help		no	no
+-mixwfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont_flatinitial/mixture_weights
+-moddeffn		/home/abdy/Desktop/diploma/kg/model_architecture/kg.ci.mdef
+-ndensity	256	1
+-nstream	4	1
+-tmatfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont_flatinitial/transition_matrices
+-topo			/home/abdy/Desktop/diploma/kg/model_architecture/kg.topology
+
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 47 total models defined (47 base, 0 tri)
+INFO: model_def_io.c(575): 188 total states
+INFO: model_def_io.c(576): 141 total tied states
+INFO: model_def_io.c(577): 141 total tied CI states
+INFO: model_def_io.c(578): 47 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: s3tmat_io.c(176): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont_flatinitial/transition_matrices [47x3x4 array]
+INFO: s3mixw_io.c(233): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.ci_cont_flatinitial/mixture_weights [141x1x1 array]
+main.c(83): Reading model definition file /home/abdy/Desktop/diploma/kg/model_architecture/kg.ci.mdef
+main.c(90): 47 models defined
+Thu May  7 00:22:03 2020

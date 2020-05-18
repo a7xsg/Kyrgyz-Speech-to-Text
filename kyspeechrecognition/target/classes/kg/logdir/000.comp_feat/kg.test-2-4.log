@@ -1,0 +1,446 @@
+Current configuration:
+[NAME]			[DEFLT]		[VALUE]
+-alpha			0.97		9.700000e-01
+-argfile				
+-blocksize		2048		2048
+-build_outdirs		yes		yes
+-c					/home/abdy/Desktop/diploma/kg/etc/kg_test.fileids
+-cep2spec		no		no
+-di					/home/abdy/Desktop/diploma/kg/wav
+-dither			no		no
+-do					/home/abdy/Desktop/diploma/kg/feat
+-doublebw		no		no
+-ei					wav
+-eo					mfc
+-example		no		no
+-frate			100		100
+-help			no		no
+-i					
+-input_endian		little		little
+-lifter			0		22
+-logspec		no		no
+-lowerf			133.33334	1.300000e+02
+-mach_endian		little		little
+-mswav			no		yes
+-ncep			13		13
+-nchans			1		1
+-nfft			512		512
+-nfilt			40		25
+-nist			no		no
+-npart			0		4
+-nskip			0		0
+-o					
+-ofmt			sphinx		sphinx
+-part			0		2
+-raw			no		no
+-remove_dc		no		no
+-remove_noise		yes		yes
+-remove_silence		yes		yes
+-round_filters		yes		yes
+-runlen			-1		-1
+-samprate		16000		1.600000e+04
+-seed			-1		-1
+-smoothspec		no		no
+-spec2cep		no		no
+-sph2pipe		no		no
+-transform		legacy		dct
+-unit_area		yes		yes
+-upperf			6855.4976	6.800000e+03
+-vad_postspeech		50		50
+-vad_prespeech		20		20
+-vad_startspeech	10		10
+-vad_threshold		2.0		2.000000e+00
+-verbose		no		no
+-warp_params				
+-warp_type		inverse_linear	inverse_linear
+-whichchan		0		0
+-wlen			0.025625	2.562500e-02
+
+INFO: sphinx_fe.c(963): Processing 386 utterances at position 386
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17436105.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17436105.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17436106.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17436106.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17436108.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17436108.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17436107.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17436107.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451303.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451303.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451302.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451302.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451304.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451304.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451301.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451301.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451310.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451310.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451308.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451308.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17451309.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17451309.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433142.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433142.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433146.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433146.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433177.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433177.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433166.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433166.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433181.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433181.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433225.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433225.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433224.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433224.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18433222.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18433222.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434944.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434944.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434980.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434980.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434973.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434973.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434954.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434954.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434982.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434982.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435007.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435007.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434996.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434996.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435000.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435000.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435011.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435011.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18438840.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18438840.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435029.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435029.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434972.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434972.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434973.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434973.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434974.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434974.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434975.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434975.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434977.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434977.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434976.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434976.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434978.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434978.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434979.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434979.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434980.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434980.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434981.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434981.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434982.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434982.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434983.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434983.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434984.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434984.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434985.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434985.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17435020.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17435020.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17435021.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17435021.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17435023.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17435023.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17435022.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17435022.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291785.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291785.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291786.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291786.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291787.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291787.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291788.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291788.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291789.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291789.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291795.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291795.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291796.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291796.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291797.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291797.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291798.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291798.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291805.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291805.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291799.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291799.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291806.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291806.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291807.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291807.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291815.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291815.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291809.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291809.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291816.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291816.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291817.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291817.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890650.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890650.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291818.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291818.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18291819.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18291819.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890651.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890651.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890652.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890652.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890654.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890654.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890653.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890653.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890655.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890655.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890656.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890656.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890657.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890657.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890658.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890658.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890659.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890659.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890665.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890665.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890667.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890667.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890666.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890666.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890668.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890668.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17890669.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17890669.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17891012.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17891012.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17891013.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17891013.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17891014.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17891014.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17891015.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17891015.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17891016.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17891016.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434117.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434117.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434118.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434118.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434119.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434119.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434120.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434120.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434121.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434121.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434122.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434122.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434124.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434124.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434127.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434127.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434126.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434126.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434129.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434129.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434130.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434130.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434133.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434133.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434131.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434131.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434134.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434134.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434136.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434136.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434135.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434135.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434143.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434143.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434142.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434142.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434145.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434145.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17357344.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17357344.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17434146.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17434146.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17357345.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17357345.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17357346.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17357346.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17357350.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17357350.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360824.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360824.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360828.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360828.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360827.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360827.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360829.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360829.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360831.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360831.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360830.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360830.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17360832.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17360832.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383240.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383240.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383241.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383241.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383242.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383242.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383258.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383258.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383260.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383260.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383555.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383555.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383554.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383554.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17383556.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17383556.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18562088.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18562088.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442313.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442313.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442317.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442317.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442320.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442320.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442322.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442322.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442324.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442324.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442346.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442346.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442349.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442349.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442372.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442372.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442367.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442367.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442370.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442370.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442368.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442368.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442388.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442388.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442386.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442386.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442389.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442389.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442390.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442390.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442402.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442402.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442403.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442403.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442401.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442401.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442404.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442404.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442405.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442405.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442421.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442421.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442422.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442422.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442423.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442423.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442424.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442424.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442425.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442425.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442436.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442436.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442437.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442437.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442440.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442440.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17442438.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17442438.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565158.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565158.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565162.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565162.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565172.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565172.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565164.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565164.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565173.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565173.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565178.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565178.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565184.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565184.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565181.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565181.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565190.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565190.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565192.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565192.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565196.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565196.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565235.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565235.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565234.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565234.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565236.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565236.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565240.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565240.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565241.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565241.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565313.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565313.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565250.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565250.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565319.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565319.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565320.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565320.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565322.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565322.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565329.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565329.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565337.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565337.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565338.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565338.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565356.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565356.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565365.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565365.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17411989.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17411989.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_19565382.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_19565382.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17411992.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17411992.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17411990.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17411990.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415261.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415261.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415262.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415262.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415263.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415263.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415265.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415265.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415351.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415351.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415353.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415353.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415352.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415352.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415354.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415354.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415355.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415355.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415376.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415376.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415378.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415378.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415377.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415377.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415381.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415381.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415421.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415421.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415423.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415423.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415422.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415422.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415425.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415425.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415465.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415465.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415462.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415462.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415486.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415486.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415487.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415487.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415488.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415488.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415489.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415489.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415518.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415518.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415490.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415490.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415514.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415514.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415519.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415519.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415531.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415531.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415535.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415535.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415533.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415533.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17415532.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17415532.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679544.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679544.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679547.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679547.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679549.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679549.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679553.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679553.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679554.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679554.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679556.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679556.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679557.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679557.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679558.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679558.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679568.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679568.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679569.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679569.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679570.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679570.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679671.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679671.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679573.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679573.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679670.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679670.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679679.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679679.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679696.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679696.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679676.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679676.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679697.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679697.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679699.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679699.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679710.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679710.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679743.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679743.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679711.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679711.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679747.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679747.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679764.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679764.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679765.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679765.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679773.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679773.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17679778.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17679778.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681308.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681308.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681310.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681310.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681311.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681311.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681317.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681317.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681319.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681319.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681321.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681321.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681320.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681320.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681337.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681337.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681338.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681338.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681339.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681339.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681341.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681341.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681340.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681340.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681353.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681353.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681354.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681354.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17681359.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17681359.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948929.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948929.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948930.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948930.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948931.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948931.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948932.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948932.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948933.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948933.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948934.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948934.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948935.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948935.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948936.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948936.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948937.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948937.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948939.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948939.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948940.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948940.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948941.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948941.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948942.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948942.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948950.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948950.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948943.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948943.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948951.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948951.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948952.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948952.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948954.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948954.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948953.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948953.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948955.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948955.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948956.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948956.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948957.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948957.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948964.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948964.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948958.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948958.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948965.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948965.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948966.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948966.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948967.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948967.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948968.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948968.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948969.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948969.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948970.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948970.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948972.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948972.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948971.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948971.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948975.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948975.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948973.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948973.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948976.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948976.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948977.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948977.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948979.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948979.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948978.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948978.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948980.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948980.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948981.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948981.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948982.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948982.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17948983.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17948983.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093167.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093167.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093168.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093168.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093169.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093169.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093170.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093170.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093171.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093171.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093173.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093173.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093175.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093175.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093174.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093174.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093176.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093176.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093185.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093185.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093184.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093184.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093182.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093182.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093186.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093186.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093189.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093189.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093191.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093191.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093197.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093197.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093198.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093198.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093210.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093210.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093201.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093201.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093211.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093211.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093213.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093213.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093227.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093227.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093231.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093231.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093228.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093228.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093240.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093240.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093244.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093244.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093266.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093266.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093268.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093268.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093267.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093267.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093269.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093269.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093270.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093270.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093283.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093283.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093285.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093285.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18093286.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18093286.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18431881.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18431881.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434624.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434624.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434623.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434623.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434637.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434637.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434654.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434654.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434656.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434656.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434665.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434665.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434673.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434673.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434679.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434679.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434697.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434697.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434681.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434681.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434698.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434698.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434699.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434699.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434724.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434724.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434734.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434734.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434736.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434736.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434749.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434749.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434767.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434767.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434751.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434751.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434743.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434743.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434798.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434798.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434799.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434799.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434800.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434800.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434771.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434771.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434814.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434814.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434812.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434812.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434827.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434827.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434816.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434816.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434836.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434836.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434828.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434828.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434838.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434838.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434841.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434841.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434844.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434844.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434854.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434854.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434846.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434846.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434855.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434855.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434856.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434856.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434905.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434905.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434873.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434873.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18434907.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18434907.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435904.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435904.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18435910.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18435910.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18437030.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18437030.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18437042.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18437042.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18437048.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18437048.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_18437099.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_18437099.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17835059.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17835059.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17835060.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17835060.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17835061.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17835061.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17835064.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17835064.mfc
+INFO: sphinx_fe.c(787): Converting /home/abdy/Desktop/diploma/kg/wav/common_voice_ky_17835065.wav to /home/abdy/Desktop/diploma/kg/feat/common_voice_ky_17835065.mfc
+Thu May  7 00:22:02 2020

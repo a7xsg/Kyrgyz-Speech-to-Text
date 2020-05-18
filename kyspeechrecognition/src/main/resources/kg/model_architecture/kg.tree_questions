@@ -1,0 +1,66 @@
+WDBNDRY_B
+WDBNDRY_E
+WDBNDRY_S
+WDBNDRY_I
+SILENCE   SIL
+QUESTION0_0_R  j ja l n
+QUESTION0_1_R  a a0 b c ch d e e0 f f0 g gh h i je jo ju k kh kh0 m ng o o0 oy oy0 p p0 r s s0 sh t t0 u u0 uy uy0 v y z zh
+QUESTION0_2_R  a a0 e0 i je jo ju o o0 oy oy0 u u0 uy uy0 y
+QUESTION0_3_R  a a0 ju o o0 u u0
+QUESTION0_4_R  e0 i je jo oy oy0 uy uy0 y
+QUESTION0_5_R  e0 i je
+QUESTION0_6_R  e0 je
+QUESTION0_7_R  jo oy oy0 uy uy0 y
+QUESTION0_8_R  b c ch d e f f0 g gh h k kh kh0 m ng p p0 r s s0 sh t t0 v z zh
+QUESTION0_9_R  f g gh h ng r s s0 sh v z
+QUESTION0_10_R  b c ch d e f0 k kh kh0 m p p0 t t0 zh
+QUESTION0_11_R  c ch d f0 k kh kh0 t t0 zh
+QUESTION0_12_R  k kh kh0 t t0
+QUESTION0_13_R  k t t0
+QUESTION0_14_R  kh kh0
+QUESTION0_15_R  c ch d f0 zh
+QUESTION0_16_R  c ch f0 zh
+QUESTION0_17_R  c ch
+QUESTION0_18_R  f0 zh
+QUESTION0_19_R  b e m p p0
+QUESTION0_20_R  b m p p0
+QUESTION0  b c ch d f f0 g gh h k kh kh0 p p0 r s s0 sh t t0 v z zh
+QUESTION1  c ch f g gh h r s s0 sh v z
+QUESTION2  ch f r sh
+QUESTION3  c g gh h s s0 v z
+QUESTION4  b d f0 k kh kh0 p p0 t t0 zh
+QUESTION5  b d f0 p p0
+QUESTION6  b f0 p p0
+QUESTION7  f0 p p0
+QUESTION8  f0 p
+QUESTION9  k kh kh0 t t0 zh
+QUESTION10  a a0 e e0 i j ja je jo ju l m n ng o o0 oy oy0 u u0 uy uy0 y
+QUESTION11  a a0 ja oy0
+QUESTION12  e e0 i j je jo ju l m n ng o o0 oy u u0 uy uy0 y
+QUESTION13  jo l m n ng o0 u0 uy0
+QUESTION14  l o0 u0
+QUESTION15  jo m n ng uy0
+QUESTION16  jo m ng uy0
+QUESTION17  jo ng uy0
+QUESTION18  jo ng
+QUESTION19  e e0 i j je ju o oy u uy y
+QUESTION2_0_L  a a0 e e0 gh i j ja je jo ju l m n ng o o0 oy oy0 r u u0 uy uy0 y
+QUESTION2_1_L  a a0 ja o oy oy0
+QUESTION2_2_L  oy oy0
+QUESTION2_3_L  a a0 ja o
+QUESTION2_4_L  e e0 gh i j je jo ju l m n ng o0 r u u0 uy uy0 y
+QUESTION2_5_L  b c ch d f f0 g h k kh kh0 p p0 s s0 sh t t0 v z zh
+QUESTION2_6_L  f0 p0 t v z
+QUESTION2_7_L  b c ch d f g h k kh kh0 p s s0 sh t0 zh
+QUESTION2_8_L  b d g h k kh kh0 p t0
+QUESTION2_9_L  b d g
+QUESTION2_10_L  h k kh kh0 p t0
+QUESTION2_11_L  k p t0
+QUESTION2_12_L  h kh kh0
+QUESTION2_13_L  h kh
+QUESTION2_14_L  c ch f s s0 sh zh
+QUESTION2_15_L  c ch f s s0 sh
+QUESTION2_16_L  ch sh
+QUESTION2_17_L  c f s s0
+QUESTION2_18_L  c f s0
+QUESTION2_19_L  c s0

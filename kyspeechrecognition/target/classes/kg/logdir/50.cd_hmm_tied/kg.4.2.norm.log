@@ -1,0 +1,46 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-accumdir		/home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_3,/home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_2,/home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_4,/home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1,
+-constE		3.0	3.000000e+00
+-dcountfn		
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-inmeanfn		
+-inmixwfn		
+-invarfn		
+-meanfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/means
+-mixwfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/mixture_weights
+-mmie		no	no
+-oaccumdir		
+-regmatfn		
+-tiedvar	no	no
+-tmatfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/transition_matrices
+-varfn			/home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/variances
+
+INFO: main.c(207): Reading and accumulating counts from /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_3
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_3/mixw_counts [641x1x4 array]
+INFO: s3tmat_io.c(118): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_3/tmat_counts [47x3x4 array]
+INFO: s3gau_io.c(386): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_3/gauden_counts with means with vars (2pass) [641x1x4 vector arrays]
+INFO: main.c(207): Reading and accumulating counts from /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_2
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_2/mixw_counts [641x1x4 array]
+INFO: s3tmat_io.c(118): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_2/tmat_counts [47x3x4 array]
+INFO: s3gau_io.c(386): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_2/gauden_counts with means with vars (2pass) [641x1x4 vector arrays]
+INFO: main.c(207): Reading and accumulating counts from /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_4
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_4/mixw_counts [641x1x4 array]
+INFO: s3tmat_io.c(118): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_4/tmat_counts [47x3x4 array]
+INFO: s3gau_io.c(386): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_4/gauden_counts with means with vars (2pass) [641x1x4 vector arrays]
+INFO: main.c(207): Reading and accumulating counts from /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1
+INFO: s3mixw_io.c(117): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/mixw_counts [641x1x4 array]
+INFO: s3tmat_io.c(118): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/tmat_counts [47x3x4 array]
+INFO: s3gau_io.c(386): Read /home/abdy/Desktop/diploma/kg/bwaccumdir/kg_buff_1/gauden_counts with means with vars (2pass) [641x1x4 vector arrays]
+INFO: main.c(321): -2passvar yes
+INFO: main.c(391): Normalizing mean for n_mgau= 641, n_stream= 1, n_density= 4
+INFO: main.c(414): Normalizing var
+INFO: s3mixw_io.c(233): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/mixture_weights [641x1x4 array]
+INFO: s3tmat_io.c(176): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/transition_matrices [47x3x4 array]
+INFO: s3gau_io.c(228): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/means [641x1x4 array]
+INFO: s3gau_io.c(228): Wrote /home/abdy/Desktop/diploma/kg/model_parameters/kg.cd_cont_500/variances [641x1x4 array]
+Thu May  7 00:24:34 2020
+Current Overall Likelihood Per Frame = -138.72381005369
+Convergence ratio = 2.17271078681983

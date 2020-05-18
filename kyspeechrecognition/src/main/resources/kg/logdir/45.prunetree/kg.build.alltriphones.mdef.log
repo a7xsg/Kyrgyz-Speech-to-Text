@@ -1,0 +1,37 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-dictfn			/home/abdy/Desktop/diploma/kg/etc/kg.dic
+-example	no	no
+-fdictfn		/home/abdy/Desktop/diploma/kg/etc/kg.filler
+-help		no	no
+-ignorewpos	no	no
+-inCDmdef		
+-inCImdef		
+-lsnfn			
+-maxtriphones	100000	100000
+-minocc		1	1
+-n_state_pm	3	3
+-oalltphnmdef		/home/abdy/Desktop/diploma/kg/model_architecture/kg.alltriphones.mdef
+-ocimdef		
+-ocountfn		
+-ountiedmdef		
+-phnlstfn		/home/abdy/Desktop/diploma/kg/model_architecture/kg.phonelist
+-triphnlstfn		
+
+INFO: main.c(94): Will write alltriphone mdef file /home/abdy/Desktop/diploma/kg/model_architecture/kg.alltriphones.mdef
+INFO: mk_mdef_gen.c(189): 0 single word triphones in input phone list
+INFO: mk_mdef_gen.c(190): 0 word beginning triphones in input phone list
+INFO: mk_mdef_gen.c(191): 0 word internal triphones in input phone list
+INFO: mk_mdef_gen.c(192): 0 word ending triphones in input phone list
+INFO: mk_mdef_gen.c(280): Reading dict /home/abdy/Desktop/diploma/kg/etc/kg.dic
+INFO: mk_mdef_gen.c(322): 10551 words in dict /home/abdy/Desktop/diploma/kg/etc/kg.dic
+INFO: mk_mdef_gen.c(280): Reading dict /home/abdy/Desktop/diploma/kg/etc/kg.filler
+INFO: mk_mdef_gen.c(322): 3 words in dict /home/abdy/Desktop/diploma/kg/etc/kg.filler
+INFO: mk_mdef_gen.c(442): 10554 words in dictionary
+INFO: mk_mdef_gen.c(443): 16770 unique single word triphones in dictionary
+INFO: mk_mdef_gen.c(444): 17415 unique word beginning triphones in dictionary
+INFO: mk_mdef_gen.c(445): 5537 unique word internal triphones in dictionary
+INFO: mk_mdef_gen.c(446): 17862 unique word ending triphones in dictionary
+INFO: mk_mdef_gen.c(897): 47 n_base, 57584 n_tri
+INFO: mk_mdef_gen.c(969): Wrote mdef file /home/abdy/Desktop/diploma/kg/model_architecture/kg.alltriphones.mdef
+Thu May  7 00:23:36 2020
